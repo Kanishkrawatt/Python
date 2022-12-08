@@ -488,3 +488,18 @@ Python supports the following jump statements:
         with open("test.txt") as f:
             f.write("Hello World")
     ```
+
+#### Strings
+
+Strings are used to store text. Strings in Python are surrounded by either single quotation marks, or double quotation marks.
+
+```python
+example:
+    my_string = "Hello World"
+    print(my_string)
+```
+
+##### String Methods
+
+Python has a set of built-in methods that you can use on strings.
+
