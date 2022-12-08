@@ -1,203 +1,250 @@
 1. capitalize()
    capitalize() method returns a string where the first character is upper case.
+
    ```python
    example:
        my_string = "hello world"
        print(my_string.capitalize())
    ```
+
    output:
-    ```python
-    Hello world
-    ```
+
+   ```python
+   Hello world
+   ```
 
 2. casefold()
-    casefold() method returns a string where all the characters are lower case.
-    ```python
-    example:
-         my_string = "HELLO WORLD"
-         print(my_string.casefold())
-    ```
-    output:
-    ```python
-    hello world
-    ```
+   casefold() method returns a string where all the characters are lower case.
 
+   ```python
+   example:
+        my_string = "HELLO WORLD"
+        print(my_string.casefold())
+   ```
+
+   output:
+
+   ```python
+   hello world
+   ```
 
 3. center()
-    center() method returns a string where the string is padded with a specified character.
-    ```python
-    example:
-         my_string = "hello world"
-         print(my_string.center(20, "0"))
-    ```
-    output:
-    ```python
-    000hello world0000000
-    ```
+   center() method returns a string where the string is padded with a specified character.
+
+   ```python
+   example:
+        my_string = "hello world"
+        print(my_string.center(20, "0"))
+   ```
+
+   output:
+
+   ```python
+   000hello world0000000
+   ```
 
 4. count()
-    count() method returns the number of times a specified value occurs in a string.
-    ```python
-    example:
-         my_string = "hello world"
-         print(my_string.count("l"))
-    ```
-    output:
-    ```python
-    3
-    ```
+   count() method returns the number of times a specified value occurs in a string.
+
+   ```python
+   example:
+        my_string = "hello world"
+        print(my_string.count("l"))
+   ```
+
+   output:
+
+   ```python
+   3
+   ```
 
 5. find()
-    find() method searches the string for a specified value and returns the position of where it was found.
-    ```python
-    example:
-         my_string = "hello world"
-         print(my_string.find("o"))
-    ```
-    output:
-    ```python
-    4
-    ```
+   find() method searches the string for a specified value and returns the position of where it was found.
+
+   ```python
+   example:
+        my_string = "hello world"
+        print(my_string.find("o"))
+   ```
+
+   output:
+
+   ```python
+   4
+   ```
 
 6. format()
-    format() method formats specified values in a string.
-    ```python
-    example:
-         my_string = "Hello {}"
-         print(my_string.format("World"))
-    ```
-    output:
-    ```python
-    Hello World
-    ```
+   format() method formats specified values in a string.
+
+   ```python
+   example:
+        my_string = "Hello {}"
+        print(my_string.format("World"))
+   ```
+
+   output:
+
+   ```python
+   Hello World
+   ```
 
 7. index()
-    index() method searches the string for a specified value and returns the position of where it was found.
-    ```python
-    example:
-         my_string = "hello world"
-         print(my_string.index("o"))
-    ```
-    output:
-    ```python
-    4
-    ```
+   index() method searches the string for a specified value and returns the position of where it was found.
+
+   ```python
+   example:
+        my_string = "hello world"
+        print(my_string.index("o"))
+   ```
+
+   output:
+
+   ```python
+   4
+   ```
 
 8. isalnum()
-    isalnum() method returns True if all characters in the string are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
-    ```python
-    example:
-         my_string = "hello world"
-         print(my_string.isalnum())
-    ```
-    output:
-    ```python
-    False
-    ```
+   isalnum() method returns True if all characters in the string are alphanumeric, meaning alphabet letter (a-z) and numbers (0-9).
+
+   ```python
+   example:
+        my_string = "hello world"
+        print(my_string.isalnum())
+   ```
+
+   output:
+
+   ```python
+   False
+   ```
 
 9. isalpha()
-    isalpha() method returns True if all characters in the string are in the alphabet.
-    ```python
-    example:
-         my_string = "hello world"
-         print(my_string.isalpha())
-    ```
-    output:
-    ```python
-    False
-    ```
+   isalpha() method returns True if all characters in the string are in the alphabet.
+   ```python
+   example:
+        my_string = "hello world"
+        print(my_string.isalpha())
+   ```
+   output:
+   ```python
+   False
+   ```
 10. isdecimal()
     isdecimal() method returns True if all characters in the string are decimals.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.isdecimal())
     ```
+
     output:
+
     ```python
     False
     ```
 
 11. isdigit()
     isdigit() method returns True if all characters in the string are digits.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.isdigit())
     ```
+
     output:
+
     ```python
     False
     ```
 
 12. Title()
     title() method returns a string where the first character in every word is upper case.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.title())
     ```
+
     output:
+
     ```python
     Hello World
     ```
 
 13. islower()
     islower() method returns True if all characters in the string are lower case.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.islower())
     ```
+
     output:
+
     ```python
     True
     ```
 
 14. isnumeric()
     isnumeric() method returns True if all characters in the string are numeric.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.isnumeric())
     ```
+
     output:
+
     ```python
     False
     ```
 
 15. isUpper()
     isUpper() method returns True if all characters in the string are upper case.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.isUpper())
     ```
+
     output:
+
     ```python
     False
     ```
 
 16. join()
     join() method takes all items in an iterable and joins them into one string.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.join("abc"))
     ```
+
     output:
+
     ```python
     ahellobhellocworld
     ```
 
 17. ljust()
     ljust() method returns a left justified version of the string.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.ljust(20, "0"))
     ```
+
     output:
+
     ```python
     hello world000000000000
     ```
@@ -347,12 +394,15 @@
     ```
 31. zfill()
     zfill() method adds zeros (0) at the beginning of the string, until it reaches the specified length.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.zfill(20))
     ```
+
     output:
+
     ```python
     000000000000hello world
     ```
@@ -381,25 +431,69 @@
     ```
 34. maketrans()
     maketrans() method returns a translation table to be used in translations.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.maketrans("h"))
 
     ```
+
     output:
+
     ```python
     {104: None}
     ```
+
 35. translate()
     translate() method returns a translated string.
+
     ```python
     example:
          my_string = "hello world"
          print(my_string.translate({104: 102}))
     ```
+
     output:
+
     ```python
     fello world
     ```
 
+36. isspace()
+    isspace() method returns True if all characters in the string are whitespaces.
+    ```python
+    example:
+         my_string = "hello world"
+         print(my_string.isspace())
+    ```
+    output:
+    ```python
+    False
+    ```
+37. isprintable()
+    isprintable() method returns True if all characters in the string are printable.
+
+    ```python
+    example:
+         my_string = "hello world"
+         print(my_string.isprintable())
+    ```
+
+    output:
+
+    ```python
+    True
+    ```
+
+38. isidentifier()
+    isidentifier() method returns True if the string is an identifier.
+    ```python
+    example:
+         my_string = "hello world"
+         print(my_string.isidentifier())
+    ```
+    output:
+    ```python
+    False
+    ```
