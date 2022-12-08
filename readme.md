@@ -332,43 +332,15 @@ Python supports the following looping statements:
    ```
 3. Nested loops
    Nested loops are loops inside loops.
+
    ```python
    example:
        for i in range(1, 4):
            for j in range(1, 4):
                print(i, j)
    ```
-4. Break statement
-   Break statement is used to exit or break a loop.
-   ```python
-   example:
-       for i in range(1, 4):
-           for j in range(1, 4):
-               print(i, j)
-               if i == 2 and j == 2:
-                   break
-   ```
-5. Continue statement
-   Continue statement is used to skip the current iteration of the loop, and continue with the next.
-   ```python
-   example:
-       for i in range(1, 4):
-           for j in range(1, 4):
-               if i == 2 and j == 2:
-                   continue
-               print(i, j)
-   ```
-6. Pass statement
-   Pass statement is a null statement. The difference between a comment and a pass statement in Python is that while the interpreter ignores a comment entirely, pass is not ignored.
-   ```python
-   example:
-       for i in range(1, 4):
-           for j in range(1, 4):
-               if i == 2 and j == 2:
-                   pass
-               print(i, j)
-   ```
-7. Else statement
+
+4. Else statement
    Else statement can be used with for and while loops.
    ```python
    syntax:
@@ -385,3 +357,134 @@ Python supports the following looping statements:
        else:
            print("Loop ended")
    ```
+
+##### Jump Statements
+
+Jump statements are used to transfer the control to another part of the program.
+
+Python supports the following jump statements:
+
+1. Break statement
+   Break statement is used to exit or break a loop.
+   ```python
+   example:
+       for i in range(1, 4):
+           for j in range(1, 4):
+               print(i, j)
+               if i == 2 and j == 2:
+                   break
+   ```
+2. Continue statement
+   Continue statement is used to skip the current iteration of the loop, and continue with the next.
+   ```python
+   example:
+       for i in range(1, 4):
+           for j in range(1, 4):
+               if i == 2 and j == 2:
+                   continue
+               print(i, j)
+   ```
+3. Pass statement
+   Pass statement is a null statement. The difference between a comment and a pass statement in Python is that while the interpreter ignores a comment entirely, pass is not ignored.
+   ```python
+   example:
+       for i in range(1, 4):
+           for j in range(1, 4):
+               if i == 2 and j == 2:
+                   pass
+               print(i, j)
+   ```
+4. Return statement
+   Return statement is used to end the execution of the function call and "returns" the result (value of the expression following the return keyword) to the caller. The statements after the return statements are not executed.
+   ```python
+   example:
+        def my_function():
+             return 10
+        print(my_function())
+   ```
+5. Yield statement
+
+   Yield statement is used to end the execution of the function call and "returns" the result (value of the expression following the yield keyword) to the caller. The difference is that the next time you call the function, it will continue from the last yield statement.
+
+   ```python
+   example:
+         def my_function():
+                yield 10
+                   yield 20
+         yeild_obj = my_function()
+           print(next(yeild_obj))
+           print(next(yeild_obj))
+   ```
+
+6. Raise statement
+   Raise statement is used to raise an exception.
+   ```python
+   example:
+       x = -1
+       if x < 0:
+           raise Exception("Sorry, no numbers below zero")
+   ```
+7. Assert statement
+   Assert statement is used for debugging purposes.
+
+   ```python
+   example:
+        x = -1
+        assert (x >= 0), "x is not positive"
+   ```
+
+8. Try statement
+   Try statement is used to catch and handle exceptions. Python has many built-in exceptions, and if you do not know what exception you got, you can use a generic except statement to catch all exceptions.
+
+   ```python
+   syntax:
+       try:
+           # code block
+       except:
+           # code block
+   ```
+
+   ```python
+   example:
+       try:
+           print(x)
+       except:
+           print("An exception occurred")
+   ```
+
+9. Finally statement
+   Finally statement is used to execute a block of code, regardless if there was an exception or not.
+
+   ```python
+   syntax:
+       try:
+           # code block
+       except:
+           # code block
+       finally:
+           # code block
+   ```
+
+   ```python
+   example:
+       try:
+           print(x)
+       except:
+           print("An exception occurred")
+       finally:
+           print("The 'try except' is finished")
+   ```
+
+10. With statement
+    With statement is used to wrap the execution
+    of a block with methods defined by the context manager. The context manager handles the entry into, and the exit from, the desired runtime context for the execution of the block.
+    ```python
+    format:
+        with expression as target:
+            # code block
+    ```
+    ```python
+    example:
+        with open("test.txt") as f:
+            f.write("Hello World")
+    ```
