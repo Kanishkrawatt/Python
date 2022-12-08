@@ -978,3 +978,223 @@ Python Support the following list methods:
     (1, 2, 3)
    ```
 
+2. Access Tuple Items
+    You can access tuple items by referring to the index number, inside square brackets:
+    ```python
+    syntax:
+          tuple[index]
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          print(tuple1[1])
+    ```
+    output:
+    ```python
+     2
+    ```
+3. Change Tuple Values
+    Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+    ```python
+    syntax:
+          tuple[index] = new_value
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          tuple1[1] = 4
+          print(tuple1)
+    ```
+    output:
+    ```python
+     TypeError: 'tuple' object does not support item assignment
+    ```
+4. Loop Through a Tuple
+    You can loop through the tuple items by using a for loop.
+    ```python
+    syntax:
+          for x in tuple:
+               print(x)
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          for x in tuple1:
+               print(x)
+    ```
+    output:
+    ```python
+     1
+     2
+     3
+    ```
+5. Check if Item Exists
+    To determine if a specified item is present in a tuple use the in keyword:
+    ```python
+    syntax:
+          if element in tuple:
+               print("Yes")
+          else:
+               print("No")
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          if 4 in tuple1:
+               print("Yes")
+          else:
+               print("No")
+    ```
+    output:
+    ```python
+     No
+    ```
+6. Tuple Length
+    To determine how many items a tuple has, use the len() method:
+    ```python
+    syntax:
+          len(tuple)
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          print(len(tuple1))
+    ```
+    output:
+    ```python
+     3
+    ```
+
+7. Tuple Concatenation
+    To concatenate, or combine, two tuples you can use the + operator:
+    ```python
+    syntax:
+          tuple1 + tuple2
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          tuple2 = (4, 5, 6)
+          print(tuple1 + tuple2)
+    ```
+    output:
+    ```python
+     (1, 2, 3, 4, 5, 6)
+    ```
+8. Tuple Repetition
+    To create a tuple with the same item, multiple times, you can use the * operator:
+    ```python
+    syntax:
+          tuple * number
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          print(tuple1 * 3)
+    ```
+    output:
+    ```python
+     (1, 2, 3, 1, 2, 3, 1, 2, 3)
+    ```
+9. Tuple membership
+    To determine if a specified item is present in a tuple use the in keyword:
+    ```python
+    syntax:
+          if element in tuple:
+               print("Yes")
+          else:
+               print("No")
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          if 4 in tuple1:
+               print("Yes")
+          else:
+               print("No")
+    ```
+    output:
+    ```python
+     No
+    ```
+
+10. Tuple max
+    To determine the largest item in a tuple use the max() method:
+    ```python
+    syntax:
+          max(tuple)
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          print(max(tuple1))
+    ```
+    output:
+    ```python
+     3
+    ```
+11. Tuple min
+    To determine the smallest item in a tuple use the min() method:
+    ```python
+    syntax:
+          min(tuple)
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3)
+          print(min(tuple1))
+    ```
+    output:
+    ```python
+     1
+    ```
+12. Tuple Count
+    To determine how many times a specified value occurs in a tuple use the count() method:
+    ```python
+    syntax:
+          tuple.count(element)
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3, 1, 2, 3)
+          print(tuple1.count(1))
+    ```
+    output:
+    ```python
+     2
+    ```
+13. Tuple Index
+    To determine the index of the first occurrence of a specified value in a tuple use the index() method:
+    ```python
+    syntax:
+          tuple.index(element)
+    ```
+    ```python
+    example:
+          tuple1 = (1, 2, 3, 1, 2, 3)
+          print(tuple1.index(1))
+    ```
+    output:
+    ```python
+     0
+    ```
+
+#### Dictionary
+
+1. Dictionary
+   A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+   ```python
+   syntax:
+        dictionary = {key1: value1, key2: value2, key3: value3, ...}
+   ```
+   ```python
+   example:
+        dict1 = {"name": "John", "age": 36}
+        print(dict1)
+   ```
+   output:
+   ```python
+    {'name': 'John', 'age': 36}
+   ```
+
+
