@@ -1,7 +1,7 @@
 import os
 from moviepy.editor import *
 from pytube import Playlist
-url = input("Enter the Url")
+url = input("Enter the Url: ")
 playlist = Playlist(url)
 count = 0
 for video in playlist.videos:
