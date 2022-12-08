@@ -503,3 +503,478 @@ example:
 
 Python has a set of built-in methods that you can use on strings.
 
+Python Support the following string methods:
+
+1. Count
+   Returns the number of times a specified value occurs in a string
+   ```python
+   syntax:
+       string.count(value, start, end)
+   ```
+   ```python
+   example:
+       my_string = "Hello World"
+       print(my_string.count("l"))
+   ```
+2. Find
+   Searches the string for a specified value and returns the position of where it was found
+   ```python
+   syntax:
+        string.find(value, start, end)
+   ```
+   ```python
+   example:
+        my_string = "Hello World"
+        print(my_string.find("l"))
+   ```
+3. Replace
+   Returns a string where a specified value is replaced with a specified value
+   ```python
+   syntax:
+        string.replace(oldvalue, newvalue, count)
+   ```
+   ```python
+   example:
+        my_string = "Hello World"
+        print(my_string.replace("l", "p"))
+   ```
+4. Split
+   Splits the string at the specified separator, and returns a list
+   ```python
+   syntax:
+        string.split(separator, maxsplit)
+   ```
+   ```python
+   example:
+        my_string = "Hello World"
+        print(my_string.split(" "))
+   ```
+5. Join
+   Joins the elements of an iterable to the end of the string
+   ```python
+   syntax:
+        string.join(iterable)
+   ```
+   ```python
+   example:
+        my_string = "Hello World"
+        print(" ".join(my_string))
+   ```
+6. Lower
+   Converts a string into lower case
+   ```python
+   syntax:
+        string.lower()
+   ```
+   ```python
+   example:
+        my_string = "Hello World"
+        print(my_string.lower())
+   ```
+7. Upper
+   Converts a string into upper case
+   ```python
+   syntax:
+        string.upper()
+   ```
+   ```python
+   example:
+        my_string = "Hello World"
+        print(my_string.upper())
+   ```
+8. Strip
+   Returns a trimmed version of the string
+   ```python
+   syntax:
+        string.strip(characters)
+   ```
+   ```python
+   example:
+        my_string = "Hello World"
+        print(my_string.strip("H"))
+   ```
+9. Startswith
+   Returns true if the string starts with the specified value
+   ```python
+   syntax:
+        string.startswith(value, start, end)
+   ```
+   ```python
+   example:
+        my_string = "Hello World"
+        print(my_string.startswith("H"))
+   ```
+10. Endswith
+    Returns true if the string ends with the specified value
+    ```python
+    syntax:
+         string.endswith(value, start, end)
+    ```
+    ```python
+    example:
+         my_string = "Hello World"
+         print(my_string.endswith("d"))
+    ```
+11. Capitalize
+    Converts the first character to upper case
+    ```python
+    syntax:
+         string.capitalize()
+    ```
+    ```python
+    example:
+         my_string = "Hello World"
+         print(my_string.capitalize())
+    ```
+
+#### Lists
+
+Lists are used to store multiple items in a single variable. Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
+
+```python
+example:
+    my_list = ["apple", "banana", "cherry"]
+    print(my_list)
+```
+
+##### Difference between Mutable and Immutable objects
+
+| Mutable                                                | Immutable                                                   |
+| ------------------------------------------------------ | ----------------------------------------------------------- |
+| Mutable objects can be changed after they are created. | Immutable objects cannot be changed after they are created. |
+| Mutable objects don't have a hash value.               | Immutable objects have a hash value.                        |
+| Mutable objects are slower than immutable objects.     | Immutable objects are faster than mutable objects.          |
+| Mutable objects can be used as dictionary keys.        | Immutable objects cannot be used as dictionary keys.        |
+| Mutable objects can be used as set members.            | Immutable objects cannot be used as set members.            |
+| examples: list, dict, set, byte array                  | examples: int, float, complex, string, tuple, range         |
+
+##### List Methods
+
+Python has a set of built-in methods that you can use on lists.
+
+Python Support the following list methods:
+
+1. Concatenation
+   Combines two lists
+
+   ```python
+   syntax:
+       list1 + list2
+   ```
+
+   ```python
+   example:
+       list1 = ["a", "b" , "c"]
+       list2 = [1, 2, 3]
+       print(list1 + list2)
+   ```
+
+   output:
+
+   ```python
+   ['a', 'b', 'c', 1, 2, 3]
+   ```
+
+2. Repeat
+   Repeats the elements of a list a specified number of times
+
+   ```python
+   syntax:
+       list * number
+   ```
+
+   ```python
+   example:
+       list1 = ["a", "b" , "c"]
+       print(list1 * 3)
+   ```
+
+   output:
+
+   ```python
+   ['a', 'b', 'c', 'a', 'b', 'c', 'a', 'b', 'c']
+   ```
+
+3. In operator
+   Returns True if a specified item is present in a list
+   ```python
+   syntax:
+       value in list
+   ```
+   ```python
+   example:
+       list1 = ["a", "b" , "c"]
+       print("a" in list1)
+   ```
+   output:
+   ```python
+    True
+   ```
+4. Not in operator
+   Returns True if a specified item is not present in a list
+   ```python
+   syntax:
+       value not in list
+   ```
+   ```python
+   example:
+       list1 = ["a", "b" , "c"]
+       print("d" not in list1)
+   ```
+   output:
+   ```python
+    True
+   ```
+5. Max
+   Returns the largest item in a list
+   ```python
+   syntax:
+       max(list)
+   ```
+   ```python
+   example:
+       list1 = [1, 2, 3]
+       print(max(list1))
+   ```
+   output:
+   ```python
+    3
+   ```
+6. Min
+   Returns the smallest item in a list
+   ```python
+   syntax:
+        min(list)
+   ```
+   ```python
+   example:
+        list1 = [1, 2, 3]
+        print(min(list1))
+   ```
+   output:
+   ```python
+    1
+   ```
+7. Len
+   Returns the number of items in a list
+   ```python
+   syntax:
+        len(list)
+   ```
+   ```python
+   example:
+        list1 = [1, 2, 3]
+        print(len(list1))
+   ```
+   output:
+   ```python
+    3
+   ```
+8. Sum
+    Returns the sum of all items in a list
+    ```python
+    syntax:
+          sum(list)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3]
+          print(sum(list1))
+    ```
+    output:
+    ```python
+     6
+    ```
+9. All
+    Returns True if all items in a list are true
+    ```python
+    syntax:
+          all(list)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3]
+          print(all(list1))
+    ```
+    output:
+    ```python
+     True
+    ```
+10. Any
+    Returns True if any item in a list is true
+    ```python
+    syntax:
+          any(list)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3]
+          print(any(list1))
+    ```
+    output:
+    ```python
+     True
+    ```
+11. Append
+    Adds an element at the end of the list
+    ```python
+    syntax:
+          list.append(element)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3]
+          list1.append(4)
+          print(list1)
+    ```
+    output:
+    ```python
+     [1, 2, 3, 4]
+    ```
+12. Extend
+    Add the elements of a list (or any iterable), to the end of the current list
+    ```python
+    syntax:
+          list.extend(iterable)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3]
+          list2 = [4, 5, 6]
+          list1.extend(list2)
+          print(list1)
+    ```
+    output:
+    ```python
+     [1, 2, 3, 4, 5, 6]
+    ```
+
+13. Count
+    Returns the number of elements with the specified value
+    ```python
+    syntax:
+          list.count(element)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          print(list1.count(5))
+    ```
+    output:
+    ```python
+     1
+    ```
+14. Remove
+    Removes the first item with the specified value
+    ```python
+    syntax:
+          list.remove(element)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          list1.remove(5)
+          print(list1)
+    ```
+    output:
+    ```python
+     [1, 2, 3, 4, 6, 7, 8, 9, 10]
+    ```
+15. Pop
+    Removes the element at the specified position
+    ```python
+    syntax:
+          list.pop(index)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          list1.pop(5)
+          print(list1)
+    ```
+    output:
+    ```python
+     [1, 2, 3, 4, 5, 7, 8, 9, 10]
+    ```
+16. Index
+    Returns the index of the first element with the specified value
+    ```python
+    syntax:
+          list.index(element)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          print(list1.index(5))
+    ```
+    output:
+    ```python
+     4
+    ```
+17. Insert
+    Adds an element at the specified position
+    ```python
+    syntax:
+          list.insert(index, element)
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          list1.insert(5, 11)
+          print(list1)
+    ```
+    output:
+    ```python
+     [1, 2, 3, 4, 5, 11, 6, 7, 8, 9, 10]
+    ```
+18. Reverse
+    Reverses the order of the list
+    ```python
+    syntax:
+          list.reverse()
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          list1.reverse()
+          print(list1)
+    ```
+    output:
+    ```python
+     [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+    ```
+19. Sort
+    Sorts the list
+    ```python
+    syntax:
+          list.sort()
+    ```
+    ```python
+    example:
+          list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          list1.sort()
+          print(list1)
+    ```
+    output:
+    ```python
+     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    ```
+
+#### Tuple
+
+1. Tuple
+   A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
+   ```python
+   syntax:
+        tuple = (element1, element2, element3, ...)
+   ```
+   ```python
+   example:
+        tuple1 = (1, 2, 3)
+        print(tuple1)
+   ```
+   output:
+   ```python
+    (1, 2, 3)
+   ```
+
