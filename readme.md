@@ -293,3 +293,93 @@ Python supports the following conditional statements:
        else:
            print("x is equal to 5")
    ```
+
+##### Looping Statements
+
+Looping statements are used to execute a block of code multiple times.
+
+Python supports the following looping statements:
+
+1. For loop
+   For loop is used to iterate over a sequence (list, tuple, string) or other iterable objects.
+
+    ```python
+    syntax:
+        for item in iterable:
+            # code block
+    ```
+    ```python
+    example:
+        my_list = [1, 2, 3]
+        for item in my_list:
+            print(item)
+    ```
+2. While loop
+    While loop is used to execute a set of statements as long as a condition is true.
+    ```python
+    syntax:
+        while condition:
+            # code block
+    ```
+    ```python
+    example:
+        x = 10
+        while x > 0:
+            print(x)
+            x -= 1
+    ```
+3. Nested loops
+    Nested loops are loops inside loops.
+    ```python
+    example:
+        for i in range(1, 4):
+            for j in range(1, 4):
+                print(i, j)
+    ```
+4. Break statement
+    Break statement is used to exit or break a loop.
+    ```python
+    example:
+        for i in range(1, 4):
+            for j in range(1, 4):
+                print(i, j)
+                if i == 2 and j == 2:
+                    break
+    ```
+5. Continue statement
+    Continue statement is used to skip the current iteration of the loop, and continue with the next.
+    ```python
+    example:
+        for i in range(1, 4):
+            for j in range(1, 4):
+                if i == 2 and j == 2:
+                    continue
+                print(i, j)
+    ```
+6. Pass statement
+    Pass statement is a null statement. The difference between a comment and a pass statement in Python is that while the interpreter ignores a comment entirely, pass is not ignored.
+    ```python
+    example:
+        for i in range(1, 4):
+            for j in range(1, 4):
+                if i == 2 and j == 2:
+                    pass
+                print(i, j)
+    ```
+7. Else statement
+    Else statement can be used with for and while loops.
+    ```python
+    syntax:
+        for item in iterable:
+            # code block
+        else:
+            # code block
+    ```
+    ```python
+    example:
+        for i in range(1, 4):
+            for j in range(1, 4):
+                print(i, j)
+        else:
+            print("Loop ended")
+    ```
