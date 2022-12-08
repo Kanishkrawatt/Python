@@ -43,3 +43,166 @@ if True:        # This a block
     print("Hello World")
 ```
 
+#### Identifiers
+
+Python uses identifiers to name variables, functions, classes, modules, and other objects . An identifier must start with a letter or underscore. It can contain letters, numbers, and underscores. It is case sensitive. Python does not allow punctuation characters such as `@` , `$` , and `%` within identifiers.
+
+```python
+_hi = 10        # This is valid
+_ = 20          # This is valid
+my_var = 10     # This is valid
+2my_var = 10    # This is invalid
+@my_var = 10    # This is invalid
+```
+
+#### Reserved Words
+
+Python has a set of reserved words that cannot be used as identifiers. These words are used to define the syntax and structure of the Python language.
+
+```python
+False       class       is          return
+None        continue    for         try
+True        def         from        while
+and         del         global      not
+with        as          elif        if
+or          else        import      pass
+break       except      in          raise
+```
+
+#### Escape Sequences
+
+Python uses escape sequences to represent certain whitespace characters. These characters cannot be typed directly into a string. The escape sequences are:
+
+```python
+\'      Single quote
+\"      Double quote
+\\      Backslash
+\n      Newline
+\t      Tab
+\r      Carriage return
+\b      Backspace
+```
+
+#### Variables and assignment statements
+
+Variables are used to store data values. A variable is created the first time it is assigned a value.
+
+The equal sign `=` is used to assign a value to a variable. The value is stored in the variable.
+
+```python
+my_var = 10     # This assigns the value 10 to the variable my_var
+```
+
+#### Data Types
+
+Python has five standard data types:
+
+- Numbers
+  Numbers are used to store numeric values. Python supports four different numerical types:
+  1. int (signed integers)
+  2. long (long integers, they can also be represented in octal and hexadecimal)
+  3. float (floating point real values)
+  4. complex (complex numbers)
+  ```python
+  example:
+    signed_int = 10     # This is a signed integer
+    long_int = 10L      # This is a long integer
+    my_float = 10.0     # This is a float
+    my_complex = 10j    # This is a complex number
+  ```
+- String
+  Strings are used to store textual data. Strings can be enclosed in single quotes or double quotes.
+  ```python
+  example:
+      my_string = "Hello World"   # This is a string
+      single_quotes = 'Hello World'   # This is also a string
+  ```
+- List
+  Lists are used to store a sequence of values. Lists are enclosed in square brackets. `[ ]`.
+  ```python
+  example:
+      my_list = [1, 2, 3]     # This is a list
+  ```
+- Tuple
+  Tuples are used to store a sequence of values. Tuple are enclosed in parentheses.`( )`.
+  ```python
+  example:
+      my_tuple = (1, 2, 3)    # This is a tuple
+  ```
+- Dictionary
+  Dictionaries are used to store data values in key:value pairs. Dictionaries are enclosed in curly braces. `{ }`.
+  ```python
+  example:
+      my_dict = {"key1": 1, "key2": 2, "key3": 3}    # This is a dictionary
+  ```
+
+#### Operators
+
+Python supports the following types of operators:
+
+- Arithmetic operators
+  Arithmetic operators are used with numeric values to perform common mathematical operations.
+
+  ```python
+  example:
+      addition = 10 + 5      # This is addition
+      subtraction = 10 - 5   # This is subtraction
+      multiplication = 10 * 5    # This is multiplication
+      division = 10 / 5      # This is division
+      modulus = 10 % 5       # This is modulus
+      exponent = 10 ** 5     # This is exponentiation
+      floor_division = 10 // 5   # This is floor division
+  ```
+
+- Assignment operators
+  Assignment operators are used to assign values to variables.
+
+  ```python
+  example:
+      x = 10      # This is an assignment operator
+      x += 5      # This is an augmented assignment operator
+      x -= 5      # This is an augmented assignment operator
+      x *= 5      # This is an augmented assignment operator
+      x /= 5      # This is an augmented assignment operator
+      x %= 5      # This is an augmented assignment operator
+      x **= 5     # This is an augmented assignment operator
+      x //= 5     # This is an augmented assignment operator
+
+  ```
+
+- Comparison operators
+  Comparison operators are used to compare two values.
+
+  ```python
+  example:
+      x = 10
+      y = 5
+      x == y      # This is an equality operator
+      x != y      # This is an inequality operator
+      x > y       # This is a greater than operator
+      x < y       # This is a less than operator
+      x >= y      # This is a greater than or equal to operator
+      x <= y      # This is a less than or equal to operator
+  ```
+
+- Logical operators
+  Logical operators are used to combine conditional statements.
+
+  ```python
+  example:
+      x = 10
+      y = 5
+      x > 5 and y > 5     # This is an and operator
+      x > 5 or y > 5      # This is an or operator
+      not(x > 5 and y > 5)    # This is a not operator
+  ```
+
+- Identity operators
+  Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.
+  ```python
+  example:
+      x = 10
+      y = 5
+      x is y      # This is an is operator
+      x is not y  # This is an is not operator
+  ```
