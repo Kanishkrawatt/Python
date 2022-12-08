@@ -4,7 +4,7 @@ from assignment3 import *
 
 def test():
     in_file = "Misc/class/class_list"
-    out_file = "new_list"
+    out_file = "Misc/class/new_list"
     
     main = Main()
     main.parse_file(in_file)
