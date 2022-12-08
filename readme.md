@@ -197,8 +197,9 @@ Python supports the following types of operators:
       not(x > 5 and y > 5)    # This is a not operator
   ```
 
-- Identity operators
+- Identity operators/ Membership operators
   Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location.
+
   ```python
   example:
       x = 10
@@ -206,3 +207,89 @@ Python supports the following types of operators:
       x is y      # This is an is operator
       x is not y  # This is an is not operator
   ```
+
+- Bitwise operators
+  Bitwise operators are used to compare (binary) numbers.
+
+  ```python
+  example:
+      x = 10
+      y = 5
+      x & y       # This is a bitwise and operator
+      x | y       # This is a bitwise or operator
+      x ^ y       # This is a bitwise xor operator
+      ~x          # This is a bitwise not operator
+      x << 2      # This is a bitwise left shift operator
+      x >> 2      # This is a bitwise right shift operator
+  ```
+
+#### Control Structures
+
+Control structures are used to change the flow of execution of a program.
+
+Python supports the following control structures:
+
+1. Conditional statements
+2. Looping statements
+3. Jump statements
+
+##### Conditional Statements
+
+Conditional statements are used to perform different actions based on different conditions.
+
+Python supports the following conditional statements:
+
+1. If statement
+   If statement is used to execute a block of code if a condition is true.
+   ```python
+   syntax:
+       if condition:
+           # code block
+   ```
+   ```python
+   example:
+       x = 10
+       if x > 5:
+           print("x is greater than 5")
+   ```
+2. If...else statement
+   If...else statement is used to execute a block of code if a condition is true. If the condition is false, another block of code can be executed.
+
+   ```python
+   syntax:
+       if condition:
+           # code block
+       else:
+           # code block
+   ```
+
+   ```python
+   example:
+       x = 10
+       if x > 5:
+           print("x is greater than 5")
+       else:
+           print("x is less than or equal to 5")
+   ```
+
+3. If...elif...else statement
+   If...elif...else statement is used to execute a different block of code for more than two conditions.
+   ```python
+   syntax:
+       if condition:
+           # code block
+       elif condition:
+           # code block
+       else:
+           # code block
+   ```
+   ```python
+   example:
+       x = 10
+       if x > 5:
+           print("x is greater than 5")
+       elif x < 5:
+           print("x is less than 5")
+       else:
+           print("x is equal to 5")
+   ```
