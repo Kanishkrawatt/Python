@@ -53,6 +53,7 @@ _ = 20          # This is valid
 my_var = 10     # This is valid
 2my_var = 10    # This is invalid
 @my_var = 10    # This is invalid
+var = 10        # This is valid
 ```
 
 #### Reserved Words
