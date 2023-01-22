@@ -772,35 +772,35 @@ Python Support the following list methods:
     3
    ```
 8. Sum
-    Returns the sum of all items in a list
-    ```python
-    syntax:
-          sum(list)
-    ```
-    ```python
-    example:
-          list1 = [1, 2, 3]
-          print(sum(list1))
-    ```
-    output:
-    ```python
-     6
-    ```
+   Returns the sum of all items in a list
+   ```python
+   syntax:
+         sum(list)
+   ```
+   ```python
+   example:
+         list1 = [1, 2, 3]
+         print(sum(list1))
+   ```
+   output:
+   ```python
+    6
+   ```
 9. All
-    Returns True if all items in a list are true
-    ```python
-    syntax:
-          all(list)
-    ```
-    ```python
-    example:
-          list1 = [1, 2, 3]
-          print(all(list1))
-    ```
-    output:
-    ```python
-     True
-    ```
+   Returns True if all items in a list are true
+   ```python
+   syntax:
+         all(list)
+   ```
+   ```python
+   example:
+         list1 = [1, 2, 3]
+         print(all(list1))
+   ```
+   output:
+   ```python
+    True
+   ```
 10. Any
     Returns True if any item in a list is true
     ```python
@@ -834,10 +834,12 @@ Python Support the following list methods:
     ```
 12. Extend
     Add the elements of a list (or any iterable), to the end of the current list
+
     ```python
     syntax:
           list.extend(iterable)
     ```
+
     ```python
     example:
           list1 = [1, 2, 3]
@@ -845,7 +847,9 @@ Python Support the following list methods:
           list1.extend(list2)
           print(list1)
     ```
+
     output:
+
     ```python
      [1, 2, 3, 4, 5, 6]
     ```
@@ -965,159 +969,171 @@ Python Support the following list methods:
 
 1. Tuple
    A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
+
    ```python
    syntax:
         tuple = (element1, element2, element3, ...)
    ```
+
    ```python
    example:
         tuple1 = (1, 2, 3)
         print(tuple1)
    ```
+
    output:
+
    ```python
     (1, 2, 3)
    ```
 
 2. Access Tuple Items
-    You can access tuple items by referring to the index number, inside square brackets:
-    ```python
-    syntax:
-          tuple[index]
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          print(tuple1[1])
-    ```
-    output:
-    ```python
-     2
-    ```
+   You can access tuple items by referring to the index number, inside square brackets:
+   ```python
+   syntax:
+         tuple[index]
+   ```
+   ```python
+   example:
+         tuple1 = (1, 2, 3)
+         print(tuple1[1])
+   ```
+   output:
+   ```python
+    2
+   ```
 3. Change Tuple Values
-    Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
-    ```python
-    syntax:
-          tuple[index] = new_value
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          tuple1[1] = 4
-          print(tuple1)
-    ```
-    output:
-    ```python
-     TypeError: 'tuple' object does not support item assignment
-    ```
+   Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
+   ```python
+   syntax:
+         tuple[index] = new_value
+   ```
+   ```python
+   example:
+         tuple1 = (1, 2, 3)
+         tuple1[1] = 4
+         print(tuple1)
+   ```
+   output:
+   ```python
+    TypeError: 'tuple' object does not support item assignment
+   ```
 4. Loop Through a Tuple
-    You can loop through the tuple items by using a for loop.
-    ```python
-    syntax:
-          for x in tuple:
-               print(x)
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          for x in tuple1:
-               print(x)
-    ```
-    output:
-    ```python
-     1
-     2
-     3
-    ```
+   You can loop through the tuple items by using a for loop.
+   ```python
+   syntax:
+         for x in tuple:
+              print(x)
+   ```
+   ```python
+   example:
+         tuple1 = (1, 2, 3)
+         for x in tuple1:
+              print(x)
+   ```
+   output:
+   ```python
+    1
+    2
+    3
+   ```
 5. Check if Item Exists
-    To determine if a specified item is present in a tuple use the in keyword:
-    ```python
-    syntax:
-          if element in tuple:
-               print("Yes")
-          else:
-               print("No")
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          if 4 in tuple1:
-               print("Yes")
-          else:
-               print("No")
-    ```
-    output:
-    ```python
-     No
-    ```
+   To determine if a specified item is present in a tuple use the in keyword:
+   ```python
+   syntax:
+         if element in tuple:
+              print("Yes")
+         else:
+              print("No")
+   ```
+   ```python
+   example:
+         tuple1 = (1, 2, 3)
+         if 4 in tuple1:
+              print("Yes")
+         else:
+              print("No")
+   ```
+   output:
+   ```python
+    No
+   ```
 6. Tuple Length
-    To determine how many items a tuple has, use the len() method:
-    ```python
-    syntax:
-          len(tuple)
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          print(len(tuple1))
-    ```
-    output:
-    ```python
-     3
-    ```
+   To determine how many items a tuple has, use the len() method:
+
+   ```python
+   syntax:
+         len(tuple)
+   ```
+
+   ```python
+   example:
+         tuple1 = (1, 2, 3)
+         print(len(tuple1))
+   ```
+
+   output:
+
+   ```python
+    3
+   ```
 
 7. Tuple Concatenation
-    To concatenate, or combine, two tuples you can use the + operator:
-    ```python
-    syntax:
-          tuple1 + tuple2
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          tuple2 = (4, 5, 6)
-          print(tuple1 + tuple2)
-    ```
-    output:
-    ```python
-     (1, 2, 3, 4, 5, 6)
-    ```
+   To concatenate, or combine, two tuples you can use the + operator:
+   ```python
+   syntax:
+         tuple1 + tuple2
+   ```
+   ```python
+   example:
+         tuple1 = (1, 2, 3)
+         tuple2 = (4, 5, 6)
+         print(tuple1 + tuple2)
+   ```
+   output:
+   ```python
+    (1, 2, 3, 4, 5, 6)
+   ```
 8. Tuple Repetition
-    To create a tuple with the same item, multiple times, you can use the * operator:
-    ```python
-    syntax:
-          tuple * number
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          print(tuple1 * 3)
-    ```
-    output:
-    ```python
-     (1, 2, 3, 1, 2, 3, 1, 2, 3)
-    ```
+   To create a tuple with the same item, multiple times, you can use the \* operator:
+   ```python
+   syntax:
+         tuple * number
+   ```
+   ```python
+   example:
+         tuple1 = (1, 2, 3)
+         print(tuple1 * 3)
+   ```
+   output:
+   ```python
+    (1, 2, 3, 1, 2, 3, 1, 2, 3)
+   ```
 9. Tuple membership
-    To determine if a specified item is present in a tuple use the in keyword:
-    ```python
-    syntax:
-          if element in tuple:
-               print("Yes")
-          else:
-               print("No")
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          if 4 in tuple1:
-               print("Yes")
-          else:
-               print("No")
-    ```
-    output:
-    ```python
-     No
-    ```
+   To determine if a specified item is present in a tuple use the in keyword:
+
+   ```python
+   syntax:
+         if element in tuple:
+              print("Yes")
+         else:
+              print("No")
+   ```
+
+   ```python
+   example:
+         tuple1 = (1, 2, 3)
+         if 4 in tuple1:
+              print("Yes")
+         else:
+              print("No")
+   ```
+
+   output:
+
+   ```python
+    No
+   ```
 
 10. Tuple max
     To determine the largest item in a tuple use the max() method:
@@ -1184,157 +1200,161 @@ Python Support the following list methods:
 
 1. Dictionary
    A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
+
    ```python
    syntax:
         dictionary = {key1: value1, key2: value2, key3: value3, ...}
    ```
+
    ```python
    example:
         dict1 = {"name": "John", "age": 36}
         print(dict1)
    ```
+
    output:
+
    ```python
     {'name': 'John', 'age': 36}
    ```
 
 2. Access Dictionary Items
-    You can access the items of a dictionary by referring to its key name, inside square brackets:
-    ```python
-    syntax:
-          dictionary[key]
-    ```
-    ```python
-    example:
-          dict1 = {"name": "John", "age": 36}
-          print(dict1["name"])
-    ```
-    output:
-    ```python
-     John
-    ```
+   You can access the items of a dictionary by referring to its key name, inside square brackets:
+   ```python
+   syntax:
+         dictionary[key]
+   ```
+   ```python
+   example:
+         dict1 = {"name": "John", "age": 36}
+         print(dict1["name"])
+   ```
+   output:
+   ```python
+    John
+   ```
 3. Change Dictionary Items
-    You can change the value of a specific item by referring to its key name:
-    ```python
-    syntax:
-          dictionary[key] = new_value
-    ```
-    ```python
-    example:
-          dict1 = {"name": "John", "age": 36}
-          dict1["age"] = 40
-          print(dict1)
-    ```
-    output:
-    ```python
-     {'name': 'John', 'age': 40}
-    ```
+   You can change the value of a specific item by referring to its key name:
+   ```python
+   syntax:
+         dictionary[key] = new_value
+   ```
+   ```python
+   example:
+         dict1 = {"name": "John", "age": 36}
+         dict1["age"] = 40
+         print(dict1)
+   ```
+   output:
+   ```python
+    {'name': 'John', 'age': 40}
+   ```
 4. Loop Through a Dictionary
-    You can loop through a dictionary by using a for loop.
-    ```python
-    syntax:
-          for x in dictionary:
-               print(x)
-    ```
-    ```python
-    example:
-          dict1 = {"name": "John", "age": 36}
-          for x in dict1:
-               print(x)
-    ```
-    output:
-    ```python
-     name
-     age
-    ```
+   You can loop through a dictionary by using a for loop.
+   ```python
+   syntax:
+         for x in dictionary:
+              print(x)
+   ```
+   ```python
+   example:
+         dict1 = {"name": "John", "age": 36}
+         for x in dict1:
+              print(x)
+   ```
+   output:
+   ```python
+    name
+    age
+   ```
 5. Check if Key Exists
-    To determine if a specified key is present in a dictionary use the in keyword:
-    ```python
-    syntax:
-          if key in dictionary:
-               print("Yes")
-          else:
-               print("No")
-    ```
-    ```python
-    example:
-          dict1 = {"name": "John", "age": 36}
-          if "name" in dict1:
-               print("Yes")
-          else:
-               print("No")
-    ```
-    output:
-    ```python
-     Yes
-    ```
+   To determine if a specified key is present in a dictionary use the in keyword:
+   ```python
+   syntax:
+         if key in dictionary:
+              print("Yes")
+         else:
+              print("No")
+   ```
+   ```python
+   example:
+         dict1 = {"name": "John", "age": 36}
+         if "name" in dict1:
+              print("Yes")
+         else:
+              print("No")
+   ```
+   output:
+   ```python
+    Yes
+   ```
 6. Dictionary Length
-    To determine how many items (key-value pairs) a dictionary has, use the len() method:
-    ```python
-    syntax:
-          len(dictionary)
-    ```
-    ```python
-    example:
-          dict1 = {"name": "John", "age": 36}
-          print(len(dict1))
-    ```
-    output:
-    ```python
-     2
-    ```
+   To determine how many items (key-value pairs) a dictionary has, use the len() method:
+   ```python
+   syntax:
+         len(dictionary)
+   ```
+   ```python
+   example:
+         dict1 = {"name": "John", "age": 36}
+         print(len(dict1))
+   ```
+   output:
+   ```python
+    2
+   ```
 7. Adding Items
-    Adding an item to the dictionary is done by using a new index key and assigning a value to it:
-    ```python
-    syntax:
-          dictionary[key] = value
-    ```
-    ```python
-    example:
-          dict1 = {"name": "John", "age": 36}
-          dict1["country"] = "Norway"
-          print(dict1)
-    ```
-    output:
-    ```python
-     {'name': 'John', 'age': 36, 'country': 'Norway'}
-    ```
+   Adding an item to the dictionary is done by using a new index key and assigning a value to it:
+   ```python
+   syntax:
+         dictionary[key] = value
+   ```
+   ```python
+   example:
+         dict1 = {"name": "John", "age": 36}
+         dict1["country"] = "Norway"
+         print(dict1)
+   ```
+   output:
+   ```python
+    {'name': 'John', 'age': 36, 'country': 'Norway'}
+   ```
 8. Removing Items
-    There are several methods to remove items from a dictionary:
-    ```python
-    syntax:
-          dictionary.pop(key)
-          dictionary.popitem()
-          del dictionary[key]
-          dictionary.clear()
-    ```
-    ```python
-    example:
-          dict1 = {"name": "John", "age": 36}
-          dict1.pop("age")
-          print(dict1)
-    ```
-    output:
-    ```python
-     {'name': 'John'}
-    ```
+   There are several methods to remove items from a dictionary:
+   ```python
+   syntax:
+         dictionary.pop(key)
+         dictionary.popitem()
+         del dictionary[key]
+         dictionary.clear()
+   ```
+   ```python
+   example:
+         dict1 = {"name": "John", "age": 36}
+         dict1.pop("age")
+         print(dict1)
+   ```
+   output:
+   ```python
+    {'name': 'John'}
+   ```
 9. Copy a Dictionary
-    You cannot copy a dictionary simply by typing dict2 = dict1, because: dict2 will only be a reference to dict1, and changes made in dict1 will automatically also be made in dict2.
-    There are ways to make a copy, one way is to use the built-in Dictionary method copy().
-    ```python
-    syntax:
-          dict2 = dict1.copy()
-    ```
-    ```python
-    example:
-          dict1 = {"name": "John", "age": 36}
-          dict2 = dict1.copy()
-          print(dict2)
-    ```
-    output:
-    ```python
-     {'name': 'John', 'age': 36}
-    ```
+   You cannot copy a dictionary simply by typing dict2 = dict1, because: dict2 will only be a reference to dict1, and changes made in dict1 will automatically also be made in dict2.
+   There are ways to make a copy, one way is to use the built-in Dictionary method copy().
+   ```python
+   syntax:
+         dict2 = dict1.copy()
+   ```
+   ```python
+   example:
+         dict1 = {"name": "John", "age": 36}
+         dict2 = dict1.copy()
+         print(dict2)
+   ```
+   output:
+   ```python
+    {'name': 'John', 'age': 36}
+   ```
 10. Nested Dictionaries
     A dictionary can also contain many dictionaries, this is called nested dictionaries.
     ```python
@@ -1381,300 +1401,501 @@ Python Support the following list methods:
 
 #### Functions
 
-1. What is a Function?
-    A function is a block of code which only runs when it is called.
-    You can pass data, known as parameters, into a function.
-    A function can return data as a result.
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def my_function():
-               print("Hello from a function")
-          my_function()
-    ```
-    output:
-    ```python
-     Hello from a function
-    ```
-2. Arguments
-    Information can be passed into functions as arguments.
-    Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
-    The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def my_function(fname):
-               print(fname + " Refsnes")
-          my_function("Emil")
-          my_function("Tobias")
-          my_function("Linus")
-    ```
-    output:
-    ```python
-     Emil Refsnes
-     Tobias Refsnes
-     Linus Refsnes
-    ```
-3. Parameters or Arguments?
-    The terms parameter and argument can be used for the same thing: information that are passed into a function.
-    From a function's perspective:
-    A parameter is the variable listed inside the parentheses in the function definition.
-    An argument is the value that is sent to the function when it is called.
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def my_function(fname):
-               print(fname + " Refsnes")
-          my_function("Emil")
-          my_function("Tobias")
-          my_function("Linus")
-    ```
-    output:
-    ```python
-     Emil Refsnes
-     Tobias Refsnes
-     Linus Refsnes
-    ```
-4. Number of Arguments
-    By default, a function must be called with the correct number of arguments. Meaning that if your function expects 2 arguments, you have to call the function with 2 arguments, not more, and not less.
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def my_function(fname, lname):
-               print(fname + " " + lname)
-          my_function("Emil", "Refsnes")
-    ```
-    output:
-    ```python
-     Emil Refsnes
-    ```
-5. Arbitrary Arguments, *args
-    If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.
-    This way the function will receive a tuple of arguments, and can access the items accordingly:
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def my_function(*kids):
-               print("The youngest child is " + kids[2])
-          my_function("Emil", "Tobias", "Linus")
-    ```
-    output:
-    ```python
-     The youngest child is Linus
-    ```
-6. Arbitrary Keyword Arguments, **kwargs
-    If you do not know how many keyword arguments that will be passed into your function, add two asterisk: ** before the parameter name in the function definition.
-    This way the function will receive a dictionary of arguments, and can access the items accordingly:
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def my_function(**kid):
-               print("His last name is " + kid["lname"])
-          my_function(fname = "Tobias", lname = "Refsnes")
-    ```
-    output:
-    ```python
-     His last name is Refsnes
-    ```
-7. Default Parameter Value
-    The following example shows how to use a default parameter value.
-    If we call the function without argument, it uses the default value:
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def my_function(country = "Norway"):
-               print("I am from " + country)
-          my_function("Sweden")
-          my_function("India")
-          my_function()
-          my_function("Brazil")
-    ```
-    output:
-    ```python
-     I am from Sweden
-     I am from India
-     I am from Norway
-     I am from Brazil
-    ```
+##### What is a Function?
+
+A function is a block of code which only runs when it is called.
+You can pass data, known as parameters, into a function.
+A function can return data as a result.
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+        def my_function():
+            print("Hello from a function")
+        my_function()
+```
+
+output:
+
+```python
+    Hello from a function
+```
+
+### Arguments
+
+Information can be passed into functions as arguments.
+Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you want, just separate them with a comma.
+The following example has a function with one argument (fname). When the function is called, we pass along a first name, which is used inside the function to print the full name:
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+        def my_function(fname):
+            print(fname + " Refsnes")
+        my_function("Emil")
+        my_function("Tobias")
+        my_function("Linus")
+```
+
+output:
+
+```python
+    Emil Refsnes
+    Tobias Refsnes
+    Linus Refsnes
+```
+
+### Parameters or Arguments?
+
+The terms parameter and argument can be used for the same thing: information that are passed into a function.
+From a function's perspective:
+A parameter is the variable listed inside the parentheses in the function definition.
+An argument is the value that is sent to the function when it is called.
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+        def my_function(fname):
+            print(fname + " Refsnes")
+        my_function("Emil")
+        my_function("Tobias")
+        my_function("Linus")
+```
+
+output:
+
+```python
+    Emil Refsnes
+    Tobias Refsnes
+    Linus Refsnes
+```
+
+#### Return Values
+
+To let a function return a value, use the return statement:
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+        def my_function(x):
+            return 5 * x
+        print(my_function(3))
+        print(my_function(5))
+        print(my_function(9))
+```
+
+output:
+
+```python
+    15
+    25
+    45
+```
 
 #### Types of Functions
 
 1. Built-in Functions
-    Python has a set of built-in functions, including print(), input(), etc.
-    ```python
-    example:
-          x = abs(-7.25)
-          print(x)
-    ```
-    output:
-    ```python
-     7.25
-    ```
+   Python has a set of built-in functions, including print(), input(), etc.
+   ```python
+   example:
+         x = abs(-7.25)
+         print(x)
+   ```
+   output:
+   ```python
+    7.25
+   ```
 2. User-defined Functions
-    You can create your own functions with the def keyword.
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def my_function():
-               print("Hello from a function")
-          my_function()
-    ```
-    output:
-    ```python
-     Hello from a function
-    ```
+   You can create your own functions with the def keyword.
+   ```python
+   syntax:
+         def function_name(parameters):
+              function_body
+   ```
+   ```python
+   example:
+         def my_function():
+              print("Hello from a function")
+         my_function()
+   ```
+   output:
+   ```python
+    Hello from a function
+   ```
 3. Anonymous Functions
-    Anonymous functions are also called lambda functions.
-    ```python
-    syntax:
-          lambda arguments : expression
-    ```
-    ```python
-    example:
-          x = lambda a : a + 10
-          print(x(5))
-    ```
-    output:
-    ```python
-     15
-    ```
+   Anonymous functions are also called lambda functions.
+   ```python
+   syntax:
+         lambda arguments : expression
+   ```
+   ```python
+   example:
+         x = lambda a : a + 10
+         print(x(5))
+   ```
+   output:
+   ```python
+    15
+   ```
 4. Recursion
-    Python also accepts function recursion, which means a defined function can call itself.
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          def tri_recursion(k):
-               if(k > 0):
-                    result = k + tri_recursion(k - 1)
-                    print(result)
-               else:
-                    result = 0
-               return result
-          print("\n\nRecursion Example Results")
-          tri_recursion(6)
-    ```
-    output:
-    ```python
-     1
-     3
-     6
-     10
-     15
-     21
-     28
-    ```
+   Python also accepts function recursion, which means a defined function can call itself.
+   ```python
+   syntax:
+         def function_name(parameters):
+              function_body
+   ```
+   ```python
+   example:
+         def tri_recursion(k):
+              if(k > 0):
+                   result = k + tri_recursion(k - 1)
+                   print(result)
+              else:
+                   result = 0
+              return result
+         print("\n\nRecursion Example Results")
+         tri_recursion(6)
+   ```
+   output:
+   ```python
+    1
+    3
+    6
+    10
+    15
+    21
+    28
+   ```
 5. Scope of Variables
-    All variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable.
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          x = 300
-          def myfunc():
-               x = 200
-               print(x)
-          myfunc()
-          print(x)
-    ```
-    output:
-    ```python
-     200
-     300
-    ```
+   All variables in a program may not be accessible at all locations in that program. This depends on where you have declared a variable.
+   ```python
+   syntax:
+         def function_name(parameters):
+              function_body
+   ```
+   ```python
+   example:
+         x = 300
+         def myfunc():
+              x = 200
+              print(x)
+         myfunc()
+         print(x)
+   ```
+   output:
+   ```python
+    200
+    300
+   ```
 6. Global Keyword
-    Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
-    To create a global variable inside a function, you can use the global keyword.
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          x = 300
-          def myfunc():
-               global x
-               x = 200
-          myfunc()
-          print(x)
-    ```
-    output:
-    ```python
-     200
-    ```
+   Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+   To create a global variable inside a function, you can use the global keyword.
+   ```python
+   syntax:
+         def function_name(parameters):
+              function_body
+   ```
+   ```python
+   example:
+         x = 300
+         def myfunc():
+              global x
+              x = 200
+         myfunc()
+         print(x)
+   ```
+   output:
+   ```python
+    200
+   ```
 7. Python Modules
-    Consider a module to be the same as a code library.
-    A file containing a set of functions you want to include in your application.
-    To create a module just save the code you want in a file with the file extension .py
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          import mymodule
-          mymodule.greeting("Jonathan")
-    ```
-    output:
-    ```python
-     Hello, Jonathan
-    ```
+   Consider a module to be the same as a code library.
+   A file containing a set of functions you want to include in your application.
+   To create a module just save the code you want in a file with the file extension .py
+   ```python
+   syntax:
+         def function_name(parameters):
+              function_body
+   ```
+   ```python
+   example:
+         import mymodule
+         mymodule.greeting("Jonathan")
+   ```
+   output:
+   ```python
+    Hello, Jonathan
+   ```
 8. Python Packages
-    Consider a package to be a directory of modules.
-    A file containing a set of functions you want to include in your application.
-    To create a module just save the code you want in a file with the file extension .py
-    ```python
-    syntax:
-          def function_name(parameters):
-               function_body
-    ```
-    ```python
-    example:
-          import mymodule
-          mymodule.greeting("Jonathan")
-    ```
-    output:
-    ```python
-     Hello, Jonathan
-    ```
+   Consider a package to be a directory of modules.
+   A file containing a set of functions you want to include in your application.
+   To create a module just save the code you want in a file with the file extension .py
+   ```python
+   syntax:
+         def function_name(parameters):
+              function_body
+   ```
+   ```python
+   example:
+         import mymodule
+         mymodule.greeting("Jonathan")
+   ```
+   output:
+   ```python
+    Hello, Jonathan
+   ```
+
+#### Formal vs. Actual Arguments
+
+Formal arguments are the arguments specified in the function definition.<br>
+Actual arguments are the values passed to the function during function call.
+
+```python
+syntax:
+        def function_name(parameters): # This is formal argument
+            function_body
+```
+
+```python
+example:
+        def my_function(fname):
+            print(fname )
+        my_function("Kanishk") # This is actual argument
+```
+
+output:
+
+```python
+    Kanishk
+```
+
+### Scope and Lifetime of Variables
+
+A variable is only available from inside the region it is created. This is called scope.
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+        def myfunc():
+          x = 300
+          print(x)
+        myfunc()
+```
+
+output:
+
+```python
+    300
+```
+
+#### Lifetime of a Variable
+
+The lifetime of a variable is the period throughout which the variable exits in the memory. The lifetime of variables inside a function is as long as the function executes.
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+        def myfunc():
+          x = 300
+          print(x)
+        myfunc()
+```
+
+output:
+
+```python
+    300
+```
+
+#### Keyword Arguments
+
+You can also send arguments with the key = value syntax.
+This way the order of the arguments does not matter.
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+    def Name(name, age):
+        print(name, "is", age, "years old.")
+    Name(age = 19, name = "Kanishk") # Here age and name are keyword arguments
+```
+
+output:
+
+```python
+    The youngest child is Linus
+```
+
+#### Default Arguments
+
+If we call the function without argument, it uses the default value.
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+    def Name(name, age = 19):
+        print(name, "is", age, "years old.")
+    Name(name = "Kanishk") # Here age is default argument
+```
+
+#### Recursion
+
+Recursion is a process of repeating items in a self-similar way. In programming, if a function calls itself, it is called recursion and the corresponding function is called as recursive function. The idea is to represent a problem in terms of one or more smaller problems, and add one or more base conditions that stop the recursion.
+
+```python
+syntax:
+        def function_name(parameters):
+            function_body
+```
+
+```python
+example:
+    def Recursion(k):
+        if(k > 0):
+            result = k + Recursion(k - 1)
+            print(result)
+        else:
+            result = 0
+        return result
+
+    Recursion(6)
+```
+
+output:
+
+```python
+1
+3
+6
+10
+15
+21
+```
+
+
+
+### Modules
+
+Consider a module to be the same as a code library.
+A file containing a set of functions you want to include in your application.
+To create a module just save the code you want in a file with the file extension .py
+
+```python
+syntax:
+    import module_name
+
+    module_name.function_name()
+
+```
+
+```python
+example:
+    import mymodule
+    mymodule.greeting("Kanishk")
+```
+
+#### Math Module
+
+The math module has a set of built-in methods that allows you to perform mathematical tasks on numbers.
+
+```python
+example:
+    import math
+    x = math.sqrt(64)
+    print(x)
+```
+
+output:
+
+```python
+    8.0
+```
+
+#### Random Module
+
+The random module can be used to generate random numbers.
+
+```python
+example:
+    import random
+    print(random.randrange(1, 10))
+```
+
+output:
+
+```python
+    random number between 1 and 10
+```
+
+
+Modules: importing Modules, Math and Random Module, creating your own modules, and concept of Packages
+
+### Creating your own Modules
+
+To create a module just save the code you want in a file with the file extension .py
+
+```python
+example:
+    def greeting(name):
+        print("Hello, " + name)
+```
+to use the module we use the import statement:
+
+```python
+example:
+    import mymodule
+    mymodule.greeting("Kanishk")
+```
+
+
+### Packages
+
+Consider a package to be a directory of modules.
+A file containing a set of functions you want to include in your application.
+To create a module just save the code you want in a file with the file extension .py
+
+
+
+
+
 
