@@ -1587,7 +1587,6 @@ output:
     28
    ```
 
-
 #### Formal vs. Actual Arguments
 
 Formal arguments are the arguments specified in the function definition.<br>
@@ -1735,8 +1734,6 @@ output:
 21
 ```
 
-
-
 ### Modules
 
 Consider a module to be the same as a code library.
@@ -1773,23 +1770,21 @@ output:
 ```python
     8.0
 ```
+
 ##### Math Module Functions
 
-| Function | Description |
-| --- | --- |
-| math.ceil(x) | Returns the smallest integer greater than or equal to x |
-| math.floor(x) | Returns the largest integer less than or equal to x |
-|math.sqrt(x) | Returns the square root of x |
-| math.pow(x, y) | Returns x raised to the power y |
-| math.pi | Returns the value of PI |
-| math.e | Returns the value of E |
-| math.sin(x) | Returns the sine of x (x is in radians) |
-| math.cos(x) | Returns the cosine of x (x is in radians) |
-| math.tan(x) | Returns the tangent of x (x is in radians) |
-| math.log(x) | Returns the natural logarithm of x, for x > 0 |
-
-
-
+| Function       | Description                                             |
+| -------------- | ------------------------------------------------------- |
+| math.ceil(x)   | Returns the smallest integer greater than or equal to x |
+| math.floor(x)  | Returns the largest integer less than or equal to x     |
+| math.sqrt(x)   | Returns the square root of x                            |
+| math.pow(x, y) | Returns x raised to the power y                         |
+| math.pi        | Returns the value of PI                                 |
+| math.e         | Returns the value of E                                  |
+| math.sin(x)    | Returns the sine of x (x is in radians)                 |
+| math.cos(x)    | Returns the cosine of x (x is in radians)               |
+| math.tan(x)    | Returns the tangent of x (x is in radians)              |
+| math.log(x)    | Returns the natural logarithm of x, for x > 0           |
 
 #### Random Module
 
@@ -1809,14 +1804,13 @@ output:
 
 ##### Random Module Functions
 
-| Function | Description |
-| --- | --- |
-| random.randrange(start, stop, step) | Returns a randomly selected element from range(start, stop, step) |
-| random.randint(start, stop) | Returns a randomly selected element from range(start, stop+1) |
-| random.choice(seq) | Returns a randomly selected element from the non-empty sequence seq |
-| random.shuffle(lst) | Shuffles the elements of the list lst |
-| random.random() | Returns a random float r, such that 0 is less than or equal to r and r is less than 1 |
-
+| Function                            | Description                                                                           |
+| ----------------------------------- | ------------------------------------------------------------------------------------- |
+| random.randrange(start, stop, step) | Returns a randomly selected element from range(start, stop, step)                     |
+| random.randint(start, stop)         | Returns a randomly selected element from range(start, stop+1)                         |
+| random.choice(seq)                  | Returns a randomly selected element from the non-empty sequence seq                   |
+| random.shuffle(lst)                 | Shuffles the elements of the list lst                                                 |
+| random.random()                     | Returns a random float r, such that 0 is less than or equal to r and r is less than 1 |
 
 ### Creating your own Modules
 
@@ -1827,6 +1821,7 @@ example:
     def greeting(name):
         print("Hello, " + name)
 ```
+
 to use the module we use the import statement:
 
 ```python
@@ -1835,15 +1830,8 @@ example:
     mymodule.greeting("Kanishk")
 ```
 
-
 ### Packages
 
 Consider a package to be a directory of modules.
 A file containing a set of functions you want to include in your application.
 To create a module just save the code you want in a file with the file extension .py
-
-
-
-
-
-
