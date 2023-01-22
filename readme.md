@@ -2402,7 +2402,7 @@ output:
     [5 5 5]]
 ```
 
-#### Introduction to matplotlib
+## Introduction to matplotlib
 
 Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+.
 
@@ -2483,8 +2483,7 @@ example:
 output:
 <img src="matplotlib/q3.png" width="400" height="auto">
 
-File handling: Types of Files (Text file, Binary Files, CSV file), Creation, writing, appending, Insertion, deletion,
-updating, modification of Data in into the files.
+
 
 #### File Handling
 
