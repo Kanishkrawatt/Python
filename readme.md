@@ -1773,6 +1773,23 @@ output:
 ```python
     8.0
 ```
+##### Math Module Functions
+
+| Function | Description |
+| --- | --- |
+| math.ceil(x) | Returns the smallest integer greater than or equal to x |
+| math.floor(x) | Returns the largest integer less than or equal to x |
+|math.sqrt(x) | Returns the square root of x |
+| math.pow(x, y) | Returns x raised to the power y |
+| math.pi | Returns the value of PI |
+| math.e | Returns the value of E |
+| math.sin(x) | Returns the sine of x (x is in radians) |
+| math.cos(x) | Returns the cosine of x (x is in radians) |
+| math.tan(x) | Returns the tangent of x (x is in radians) |
+| math.log(x) | Returns the natural logarithm of x, for x > 0 |
+
+
+
 
 #### Random Module
 
@@ -1790,8 +1807,16 @@ output:
     random number between 1 and 10
 ```
 
+##### Random Module Functions
 
-Modules: importing Modules, Math and Random Module, creating your own modules, and concept of Packages
+| Function | Description |
+| --- | --- |
+| random.randrange(start, stop, step) | Returns a randomly selected element from range(start, stop, step) |
+| random.randint(start, stop) | Returns a randomly selected element from range(start, stop+1) |
+| random.choice(seq) | Returns a randomly selected element from the non-empty sequence seq |
+| random.shuffle(lst) | Shuffles the elements of the list lst |
+| random.random() | Returns a random float r, such that 0 is less than or equal to r and r is less than 1 |
+
 
 ### Creating your own Modules
 
