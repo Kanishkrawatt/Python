@@ -1835,3 +1835,362 @@ example:
 Consider a package to be a directory of modules.
 A file containing a set of functions you want to include in your application.
 To create a module just save the code you want in a file with the file extension .py
+
+
+
+### NumPy Library
+
+NumPy is a Python library used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+
+#### Introduction to NumPy
+
+NumPy stands for Numerical Python. It is a library consisting of multidimensional array objects and a collection of routines for processing those arrays. Using NumPy, mathematical and logical operations on arrays can be performed.
+
+#### Creation of One-Dimensional Arrays
+
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([1, 2, 3, 4, 5])
+    print(arr)
+```
+
+output:
+
+```python
+    [1 2 3 4 5]
+```
+
+#### Re-shaping of an Array
+
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+    array_name.reshape(row, column)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+    newarr = arr.reshape(3, 3)
+    print(newarr)
+```
+
+output:
+
+```python
+    [[1 2 3]
+    [4 5 6]
+    [7 8 9]]
+```
+
+#### Elementwise Operations
+
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+    array_name + array_name
+    array_name - array_name
+    array_name * array_name
+    array_name / array_name
+```
+
+```python
+example:
+    import numpy as np
+    arr1 = np.array([1, 2, 3, 4, 5])
+    arr2 = np.array([6, 7, 8, 9, 10])
+    print(arr1 + arr2)
+    print(arr1 - arr2)
+    print(arr1 * arr2)
+    print(arr1 / arr2)
+```
+
+output:
+
+```python
+    [ 7  9 11 13 15]
+    [-5 -5 -5 -5 -5]
+    [ 6 14 24 36 50]
+    [0.16666667 0.28571429 0.375      0.44444444 0.5       ]
+```
+
+
+#### Aggregate Operations
+Aggregate operations perform a specific calculation on the entire array or some elements in the array.
+
+
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+    array_name.sum()
+    array_name.min()
+    array_name.max()
+    array_name.mean()
+    array_name.std()
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([1, 2, 3, 4, 5])
+    print(arr.sum())
+    print(arr.min())
+    print(arr.max())
+    print(arr.mean())
+    print(arr.std())
+```
+
+output:
+
+```python
+    15
+    1
+    5
+    3.0
+    1.4142135623730951
+```
+
+#### Array indexing
+Accessing array elements is very similar to accessing list elements. In fact, arrays can be considered as an extension of lists. The only difference is that all the elements of an array should be of the same type, typically a numeric type such as float or integer.
+
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+    array_name[index]
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([1, 2, 3, 4, 5])
+    print(arr[0])
+    print(arr[1])
+    print(arr[2])
+    print(arr[3])
+    print(arr[4])
+```
+
+output:
+
+```python
+    1
+    2
+    3
+    4
+    5
+```
+
+#### Array Slicing
+Array slicing is the concept of accessing a subset of an array. Slicing is done by using the colon (:) operator.
+
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+    array_name[start:end]
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([1, 2, 3, 4, 5])
+    print(arr[1:4])
+```
+
+output:
+
+```python
+    [2 3 4]
+```
+
+#### insert Row/Columns
+Adding a new row or column to an existing array is called array manipulation. NumPy provides the following functions for array manipulation.
+
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+    np.insert(array_name, index, values, axis)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([[1, 2], [3, 4], [5, 6]])
+    newarr = np.insert(arr, 1, 5, axis=1)
+    print(newarr)
+```
+
+output:
+
+```python
+    [[1 5 2]
+    [3 5 4]
+    [5 5 6]]
+```
+
+#### Append Row/Columns
+Adding a new row or column to an existing array is called array manipulation. NumPy provides the following functions for array manipulation.
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+    np.append(array_name, values, axis)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([[1, 2], [3, 4], [5, 6]])
+    newarr = np.append(arr, [[7, 8]], axis=0)
+    print(newarr)
+```
+
+output:
+
+```python
+    [[1 2]
+    [3 4]
+    [5 6]
+    [7 8]]
+```
+
+#### Array Manipulation Operations
+Adding a new row or column to an existing array is called array manipulation. NumPy provides the following functions for array manipulation.
+
+```python
+syntax:
+    import numpy as np
+    array_name = np.array([element1, element2, element3, ...])
+    np.delete(array_name, index, axis)
+    np.concatenate((array1, array2), axis)
+    np.vstack((array1, array2))
+    np.hstack((array1, array2))
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([[1, 2], [3, 4], [5, 6]])
+    newarr = np.delete(arr, 1, axis=1)
+    print(newarr)
+    arr1 = np.array([[1, 2], [3, 4]])
+    arr2 = np.array([[5, 6], [7, 8]])
+    newarr = np.concatenate((arr1, arr2), axis=1)
+    print(newarr)
+    newarr = np.vstack((arr1, arr2))
+    print(newarr)
+    newarr = np.hstack((arr1, arr2))
+    print(newarr)
+```
+
+output:
+
+```python
+    [[1]
+    [3]
+    [5]]
+    [[1 2 5 6]
+    [3 4 7 8]]
+    [[1 2]
+    [3 4]
+    [5 6]
+    [7 8]]
+    [[1 2 5 6]
+    [3 4 7 8]]
+```
+
+#### Introduction to matplotlib
+Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+.
+
+```python
+syntax:
+    import matplotlib.pyplot as plt
+    plt.plot(x, y)
+    plt.show()
+```
+
+```python
+example:
+    import matplotlib.pyplot as plt
+    x = [1, 2, 3]
+    y = [2, 4, 1]
+    plt.plot(x, y)
+    plt.show()
+```
+
+output:
+<img src="matplotlib/q1.png" width="400" height="auto">
+
+
+
+#### Bar Graphs
+A bar graph is a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar graph is sometimes called a column graph.
+
+```python
+syntax:
+    import matplotlib.pyplot as plt
+    plt.bar(x, height, width, bottom, align)
+    plt.show()
+```
+
+```python
+example:
+    import matplotlib.pyplot as plt
+    x = [2, 4, 6, 8, 10]
+    y = [6, 7, 8, 2, 4]
+    plt.bar(x, y, label="Bars1")
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.title('Bar Graph')
+    plt.legend()
+    plt.show()
+```
+
+output:
+<img src="matplotlib/q2.png" width="400" height="auto">
+
+#### Pie Charts
+A pie chart (or a circle chart) is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice (and consequently its central angle and area), is proportional to the quantity it represents.
+
+```python
+syntax:
+    import matplotlib.pyplot as plt
+    plt.pie(sizes, explode, labels, colors, autopct, shadow, startangle)
+    plt.show()
+```
+
+```python
+example:
+    import matplotlib.pyplot as plt
+    slices = [7, 2, 2, 13]
+    activities = ['sleeping', 'eating', 'working', 'playing']
+    cols = ['c', 'm', 'r', 'b']
+    plt.pie(slices,
+            labels=activities,
+            colors=cols,
+            startangle=90,
+            shadow=True,
+            explode=(0, 0.1, 0, 0),
+            autopct='%1.1f%%')
+    plt.title('Pie Plot')
+    plt.show()
+```
+
+output:
+<img src="matplotlib/q3.png" width="400" height="auto">
+
+
+
