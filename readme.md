@@ -10,7 +10,7 @@ Python is a programming language that was created by Guido van Rossum in 1991. I
 
 Python is an interpreted language. This means that the code is not compiled into machine language before it is executed. Instead, the code is executed by an interpreter. The interpreter reads the code and executes it. Python is also an object-oriented programming language. This means that the code is organized into objects. These objects can contain data and code. Python is also a dynamically typed language. This means that the type of a variable is determined at runtime.
 
-#### Program Structure
+### Program Structure
 
 Python programs are organized into modules. A module is a file that contains Python code. Modules can be imported into other modules.
 
@@ -43,7 +43,7 @@ if True:        # This a block
     print("Hello World")
 ```
 
-#### Identifiers
+### Identifiers
 
 Python uses identifiers to name variables, functions, classes, modules, and other objects . An identifier must start with a letter or underscore. It can contain letters, numbers, and underscores. It is case sensitive. Python does not allow punctuation characters such as `@` , `$` , and `%` within identifiers.
 
@@ -56,7 +56,7 @@ my_var = 10     # This is valid
 var = 10        # This is valid
 ```
 
-#### Reserved Words
+### Reserved Words
 
 Python has a set of reserved words that cannot be used as identifiers. These words are used to define the syntax and structure of the Python language.
 
@@ -70,7 +70,7 @@ or          else        import      pass
 break       except      in          raise
 ```
 
-#### Escape Sequences
+### Escape Sequences
 
 Python uses escape sequences to represent certain whitespace characters. These characters cannot be typed directly into a string. The escape sequences are:
 
@@ -94,7 +94,7 @@ The equal sign `=` is used to assign a value to a variable. The value is stored 
 my_var = 10     # This assigns the value 10 to the variable my_var
 ```
 
-#### Data Types
+## Data Types
 
 Python has five standard data types:
 
@@ -224,7 +224,7 @@ Python supports the following types of operators:
       x >> 2      # This is a bitwise right shift operator
   ```
 
-#### Control Structures
+## Control Structures
 
 Control structures are used to change the flow of execution of a program.
 
@@ -234,7 +234,7 @@ Python supports the following control structures:
 2. Looping statements
 3. Jump statements
 
-##### Conditional Statements
+### Conditional Statements
 
 Conditional statements are used to perform different actions based on different conditions.
 
@@ -490,7 +490,7 @@ Python supports the following jump statements:
             f.write("Hello World")
     ```
 
-#### Strings
+## Strings
 
 Strings are used to store text. Strings in Python are surrounded by either single quotation marks, or double quotation marks.
 
@@ -628,7 +628,7 @@ Python Support the following string methods:
          print(my_string.capitalize())
     ```
 
-#### Lists
+## Lists
 
 Lists are used to store multiple items in a single variable. Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, Set, and Dictionary, all with different qualities and usage.
 
@@ -965,177 +965,215 @@ Python Support the following list methods:
      [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     ```
 
-#### Tuple
+## Tuple
 
-1. Tuple
-   A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
+A tuple is a collection which is ordered and unchangeable. In Python tuples are written with round brackets.
 
-   ```python
-   syntax:
-        tuple = (element1, element2, element3, ...)
-   ```
+```python
+syntax:
+     tuple = (element1, element2, element3, ...)
+```
 
-   ```python
-   example:
-        tuple1 = (1, 2, 3)
-        print(tuple1)
-   ```
+```python
+example:
+     tuple1 = (1, 2, 3)
+     print(tuple1)
+```
 
-   output:
+output:
 
-   ```python
-    (1, 2, 3)
-   ```
+```python
+ (1, 2, 3)
+```
 
-2. Access Tuple Items
-   You can access tuple items by referring to the index number, inside square brackets:
-   ```python
-   syntax:
-         tuple[index]
-   ```
-   ```python
-   example:
-         tuple1 = (1, 2, 3)
-         print(tuple1[1])
-   ```
-   output:
-   ```python
-    2
-   ```
-3. Change Tuple Values
-   Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
-   ```python
-   syntax:
-         tuple[index] = new_value
-   ```
-   ```python
-   example:
-         tuple1 = (1, 2, 3)
-         tuple1[1] = 4
-         print(tuple1)
-   ```
-   output:
-   ```python
-    TypeError: 'tuple' object does not support item assignment
-   ```
-4. Loop Through a Tuple
-   You can loop through the tuple items by using a for loop.
-   ```python
-   syntax:
-         for x in tuple:
-              print(x)
-   ```
-   ```python
-   example:
-         tuple1 = (1, 2, 3)
-         for x in tuple1:
-              print(x)
-   ```
-   output:
-   ```python
-    1
-    2
-    3
-   ```
-5. Check if Item Exists
-   To determine if a specified item is present in a tuple use the in keyword:
-   ```python
-   syntax:
-         if element in tuple:
-              print("Yes")
-         else:
-              print("No")
-   ```
-   ```python
-   example:
-         tuple1 = (1, 2, 3)
-         if 4 in tuple1:
-              print("Yes")
-         else:
-              print("No")
-   ```
-   output:
-   ```python
-    No
-   ```
-6. Tuple Length
-   To determine how many items a tuple has, use the len() method:
+### Access Tuple Items
 
-   ```python
-   syntax:
-         len(tuple)
-   ```
+You can access tuple items by referring to the index number, inside square brackets:
 
-   ```python
-   example:
-         tuple1 = (1, 2, 3)
-         print(len(tuple1))
-   ```
+```python
+syntax:
+      tuple[index]
+```
 
-   output:
+```python
+example:
+      tuple1 = (1, 2, 3)
+      print(tuple1[1])
+```
 
-   ```python
-    3
-   ```
+output:
 
-7. Tuple Concatenation
-   To concatenate, or combine, two tuples you can use the + operator:
-   ```python
-   syntax:
-         tuple1 + tuple2
-   ```
-   ```python
-   example:
-         tuple1 = (1, 2, 3)
-         tuple2 = (4, 5, 6)
-         print(tuple1 + tuple2)
-   ```
-   output:
-   ```python
-    (1, 2, 3, 4, 5, 6)
-   ```
-8. Tuple Repetition
-   To create a tuple with the same item, multiple times, you can use the \* operator:
-   ```python
-   syntax:
-         tuple * number
-   ```
-   ```python
-   example:
-         tuple1 = (1, 2, 3)
-         print(tuple1 * 3)
-   ```
-   output:
-   ```python
-    (1, 2, 3, 1, 2, 3, 1, 2, 3)
-   ```
-9. Tuple membership
-   To determine if a specified item is present in a tuple use the in keyword:
+```python
+ 2
+```
 
-   ```python
-   syntax:
-         if element in tuple:
-              print("Yes")
-         else:
-              print("No")
-   ```
+#### Change Tuple Values
 
-   ```python
-   example:
-         tuple1 = (1, 2, 3)
-         if 4 in tuple1:
-              print("Yes")
-         else:
-              print("No")
-   ```
+Once a tuple is created, you cannot change its values. Tuples are unchangeable, or immutable as it also is called.
 
-   output:
+```python
+syntax:
+      tuple[index] = new_value
+```
 
-   ```python
-    No
-   ```
+```python
+example:
+      tuple1 = (1, 2, 3)
+      tuple1[1] = 4
+      print(tuple1)
+```
 
-10. Tuple max
+output:
+
+```python
+ TypeError: 'tuple' object does not support item assignment
+```
+
+#### Loop Through a Tuple
+
+You can loop through the tuple items by using a for loop.
+
+```python
+syntax:
+      for x in tuple:
+           print(x)
+```
+
+```python
+example:
+      tuple1 = (1, 2, 3)
+      for x in tuple1:
+           print(x)
+```
+
+output:
+
+```python
+ 1
+ 2
+ 3
+```
+
+#### Check if Item Exists
+
+To determine if a specified item is present in a tuple use the in keyword:
+
+```python
+syntax:
+      if element in tuple:
+           print("Yes")
+      else:
+           print("No")
+```
+
+```python
+example:
+      tuple1 = (1, 2, 3)
+      if 4 in tuple1:
+           print("Yes")
+      else:
+           print("No")
+```
+
+output:
+
+```python
+ No
+```
+
+#### Tuple Length
+
+To determine how many items a tuple has, use the len() method:
+
+```python
+syntax:
+      len(tuple)
+```
+
+```python
+example:
+      tuple1 = (1, 2, 3)
+      print(len(tuple1))
+```
+
+output:
+
+```python
+ 3
+```
+
+#### Tuple Concatenation
+
+To concatenate, or combine, two tuples you can use the + operator:
+
+```python
+syntax:
+      tuple1 + tuple2
+```
+
+```python
+example:
+      tuple1 = (1, 2, 3)
+      tuple2 = (4, 5, 6)
+      print(tuple1 + tuple2)
+```
+
+output:
+
+```python
+ (1, 2, 3, 4, 5, 6)
+```
+
+#### Tuple Repetition
+
+To create a tuple with the same item, multiple times, you can use the \* operator:
+
+```python
+syntax:
+      tuple * number
+```
+
+```python
+example:
+      tuple1 = (1, 2, 3)
+      print(tuple1 * 3)
+```
+
+output:
+
+```python
+ (1, 2, 3, 1, 2, 3, 1, 2, 3)
+```
+
+#### Tuple membership
+
+To determine if a specified item is present in a tuple use the in keyword:
+
+```python
+syntax:
+      if element in tuple:
+           print("Yes")
+      else:
+           print("No")
+```
+
+```python
+example:
+      tuple1 = (1, 2, 3)
+      if 4 in tuple1:
+           print("Yes")
+      else:
+           print("No")
+```
+
+output:
+
+```python
+ No
+```
+
+#### Tuple max
+
     To determine the largest item in a tuple use the max() method:
     ```python
     syntax:
@@ -1150,7 +1188,9 @@ Python Support the following list methods:
     ```python
      3
     ```
-11. Tuple min
+
+#### Tuple min
+
     To determine the smallest item in a tuple use the min() method:
     ```python
     syntax:
@@ -1165,7 +1205,9 @@ Python Support the following list methods:
     ```python
      1
     ```
-12. Tuple Count
+
+#### Tuple Count
+
     To determine how many times a specified value occurs in a tuple use the count() method:
     ```python
     syntax:
@@ -1180,7 +1222,9 @@ Python Support the following list methods:
     ```python
      2
     ```
-13. Tuple Index
+
+#### Tuple Index
+
     To determine the index of the first occurrence of a specified value in a tuple use the index() method:
     ```python
     syntax:
@@ -1196,7 +1240,7 @@ Python Support the following list methods:
      0
     ```
 
-#### Dictionary
+## Dictionary
 
 1. Dictionary
    A dictionary is a collection which is unordered, changeable and indexed. In Python dictionaries are written with curly brackets, and they have keys and values.
@@ -1399,7 +1443,7 @@ Python Support the following list methods:
     update() | Updates the dictionary with the specified key-value pairs
     values() | Returns a list of all the values in the dictionary
 
-#### Functions
+## Functions
 
 ##### What is a Function?
 
@@ -1836,8 +1880,6 @@ Consider a package to be a directory of modules.
 A file containing a set of functions you want to include in your application.
 To create a module just save the code you want in a file with the file extension .py
 
-
-
 ### NumPy Library
 
 NumPy is a Python library used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices.
@@ -1924,10 +1966,9 @@ output:
     [0.16666667 0.28571429 0.375      0.44444444 0.5       ]
 ```
 
-
 #### Aggregate Operations
-Aggregate operations perform a specific calculation on the entire array or some elements in the array.
 
+Aggregate operations perform a specific calculation on the entire array or some elements in the array.
 
 ```python
 syntax:
@@ -1962,6 +2003,7 @@ output:
 ```
 
 #### Array indexing
+
 Accessing array elements is very similar to accessing list elements. In fact, arrays can be considered as an extension of lists. The only difference is that all the elements of an array should be of the same type, typically a numeric type such as float or integer.
 
 ```python
@@ -1993,6 +2035,7 @@ output:
 ```
 
 #### Array Slicing
+
 Array slicing is the concept of accessing a subset of an array. Slicing is done by using the colon (:) operator.
 
 ```python
@@ -2016,6 +2059,7 @@ output:
 ```
 
 #### insert Row/Columns
+
 Adding a new row or column to an existing array is called array manipulation. NumPy provides the following functions for array manipulation.
 
 ```python
@@ -2042,7 +2086,9 @@ output:
 ```
 
 #### Append Row/Columns
+
 Adding a new row or column to an existing array is called array manipulation. NumPy provides the following functions for array manipulation.
+
 ```python
 syntax:
     import numpy as np
@@ -2068,6 +2114,7 @@ output:
 ```
 
 #### Array Manipulation Operations
+
 Adding a new row or column to an existing array is called array manipulation. NumPy provides the following functions for array manipulation.
 
 ```python
@@ -2113,6 +2160,7 @@ output:
 ```
 
 #### Introduction to matplotlib
+
 Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+.
 
 ```python
@@ -2134,9 +2182,8 @@ example:
 output:
 <img src="matplotlib/q1.png" width="400" height="auto">
 
-
-
 #### Bar Graphs
+
 A bar graph is a chart or graph that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. The bars can be plotted vertically or horizontally. A vertical bar graph is sometimes called a column graph.
 
 ```python
@@ -2163,6 +2210,7 @@ output:
 <img src="matplotlib/q2.png" width="400" height="auto">
 
 #### Pie Charts
+
 A pie chart (or a circle chart) is a circular statistical graphic, which is divided into slices to illustrate numerical proportion. In a pie chart, the arc length of each slice (and consequently its central angle and area), is proportional to the quantity it represents.
 
 ```python
@@ -2192,5 +2240,21 @@ example:
 output:
 <img src="matplotlib/q3.png" width="400" height="auto">
 
+File handling: Types of Files (Text file, Binary Files, CSV file), Creation, writing, appending, Insertion, deletion,
+updating, modification of Data in into the files.
 
+#### File Handling
 
+File handling is an important part of any web application. Python has several functions for creating, reading, updating, and deleting files.
+
+The key function for working with files in Python is the open() function.
+
+The open() function takes two parameters; filename, and mode.
+
+There are four different methods (modes) for opening a file:
+
+```python
+"r" - Read - Default value. Opens a file for reading, error if the file does not exist
+"a" - Append - Opens a file for appending, creates the file if it does not exist
+"w" - Write - Opens a file for writing, creates the file if it does not exist
+```
