@@ -1174,71 +1174,87 @@ output:
 
 #### Tuple max
 
-    To determine the largest item in a tuple use the max() method:
-    ```python
-    syntax:
-          max(tuple)
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          print(max(tuple1))
-    ```
-    output:
-    ```python
-     3
-    ```
+To determine the largest item in a tuple use the max() method:
+
+```python
+syntax:
+        max(tuple)
+```
+
+```python
+example:
+        tuple1 = (1, 2, 3)
+        print(max(tuple1))
+```
+
+output:
+
+```python
+    3
+```
 
 #### Tuple min
 
-    To determine the smallest item in a tuple use the min() method:
-    ```python
-    syntax:
-          min(tuple)
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3)
-          print(min(tuple1))
-    ```
-    output:
-    ```python
-     1
-    ```
+To determine the smallest item in a tuple use the min() method:
+
+```python
+syntax:
+        min(tuple)
+```
+
+```python
+example:
+        tuple1 = (1, 2, 3)
+        print(min(tuple1))
+```
+
+output:
+
+```python
+    1
+```
 
 #### Tuple Count
 
-    To determine how many times a specified value occurs in a tuple use the count() method:
-    ```python
-    syntax:
-          tuple.count(element)
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3, 1, 2, 3)
-          print(tuple1.count(1))
-    ```
-    output:
-    ```python
-     2
-    ```
+To determine how many times a specified value occurs in a tuple use the count() method:
+
+```python
+syntax:
+        tuple.count(element)
+```
+
+```python
+example:
+        tuple1 = (1, 2, 3, 1, 2, 3)
+        print(tuple1.count(1))
+```
+
+output:
+
+```python
+    2
+```
 
 #### Tuple Index
 
-    To determine the index of the first occurrence of a specified value in a tuple use the index() method:
-    ```python
-    syntax:
-          tuple.index(element)
-    ```
-    ```python
-    example:
-          tuple1 = (1, 2, 3, 1, 2, 3)
-          print(tuple1.index(1))
-    ```
-    output:
-    ```python
-     0
-    ```
+To determine the index of the first occurrence of a specified value in a tuple use the index() method:
+
+```python
+syntax:
+        tuple.index(element)
+```
+
+```python
+example:
+        tuple1 = (1, 2, 3, 1, 2, 3)
+        print(tuple1.index(1))
+```
+
+output:
+
+```python
+    0
+```
 
 ## Dictionary
 
@@ -2159,6 +2175,233 @@ output:
     [3 4 7 8]]
 ```
 
+#### Numpy functions
+
+| Function                          | Description                                                                                                       |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| [np.array()](#numpy-arrage)       | Convert input data (list, tuple, array, or other sequence type) to an ndarray, or create an ndarray from scratch. |
+| [np.linspace()](#numpy-linespace) | Return evenly spaced numbers over a specified interval.                                                           |
+| [np.zeros()](#numpy-zeros)        | Return a new array of given shape and type, filled with zeros.                                                    |
+| [np.ones()](#numpy-ones)          | Return a new array of given shape and type, filled with ones.                                                     |
+| [np.eye()](#numpy-eye)            | Return a 2-D array with ones on the diagonal and zeros elsewhere.                                                 |
+| [np.unique()](#numpy-unique)      | Find the unique elements of an array.                                                                             |
+| [np.sort()](#numpy-sort)          | Sort an array.                                                                                                    |
+| [np.argsort()](#numpy-argsort)    | Returns the indices that would sort an array.                                                                     |
+| [np.full()](#numpy-full)          | Return a new array of given shape and type, filled with fill_value.                                               |
+
+##### Numpy Arrage
+
+Numpy arrage is used to create an array with evenly spaced values within a given interval. The format of the arrage function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.arange(start, stop, step, dtype)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.arange(1, 10, 2)
+    print(arr)
+```
+
+output:
+
+```python
+    [1 3 5 7 9]
+```
+
+##### Numpy Linespace
+
+Numpy linespace is used to create an array with evenly spaced values within a given interval. The format of the linespace function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.linspace(start, stop, num, endpoint, retstep, dtype)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.linspace(1, 10, 5)
+    print(arr)
+```
+
+output:
+
+```python
+    [ 1.    3.25  5.5   7.75 10.  ]
+```
+
+##### Numpy Zeros
+
+Numpy zeros is used to create an array with all zeros. The format of the zeros function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.zeros(shape, dtype, order)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.zeros((2, 3))
+    print(arr)
+```
+
+output:
+
+```python
+    [[0. 0. 0.]
+    [0. 0. 0.]]
+```
+
+##### Numpy Ones
+
+Numpy ones is used to create an array with all ones. The format of the ones function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.ones(shape, dtype, order)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.ones((2, 3))
+    print(arr)
+```
+
+output:
+
+```python
+    [[1. 1. 1.]
+    [1. 1. 1.]]
+```
+
+##### Numpy Eye
+
+Numpy eye is used to create an array with ones on the diagonal and zeros elsewhere. The format of the eye function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.eye(N, M, k, dtype)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.eye(3)
+    print(arr)
+```
+
+output:
+
+```python
+    [[1. 0. 0.]
+    [0. 1. 0.]
+    [0. 0. 1.]]
+```
+
+##### Numpy Unique
+
+Numpy unique is used to find the unique elements of an array. The format of the unique function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.unique(ar, return_index, return_inverse, return_counts, axis)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10])
+    x = np.unique(arr)
+    print(x)
+```
+
+output:
+
+```python
+    [ 1  2  3  4  5  6  7  8  9 10]
+```
+
+##### Numpy Sort
+
+Numpy sort is used to sort an array. The format of the sort function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.sort(a, axis, kind, order)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([3, 2, 0, 1])
+    print(np.sort(arr))
+```
+
+output:
+
+```python
+    [0 1 2 3]
+```
+
+##### Numpy Argsort
+
+Numpy argsort is used to returns the indices that would sort an array. The format of the argsort function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.argsort(a, axis, kind, order)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.array([3, 2, 0, 1])
+    print(np.argsort(arr))
+```
+
+output:
+
+```python
+    [2 3 1 0]
+```
+
+##### Numpy Full
+
+Numpy full is used to return a new array of given shape and type, filled with fill_value. The format of the full function is as follows:
+
+```python
+syntax:
+    import numpy as np
+    np.full(shape, fill_value, dtype, order)
+```
+
+```python
+example:
+    import numpy as np
+    arr = np.full((2, 3), 5)
+    print(arr)
+```
+
+output:
+
+```python
+    [[5 5 5]
+    [5 5 5]]
+```
+
 #### Introduction to matplotlib
 
 Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+.
@@ -2257,4 +2500,60 @@ There are four different methods (modes) for opening a file:
 "r" - Read - Default value. Opens a file for reading, error if the file does not exist
 "a" - Append - Opens a file for appending, creates the file if it does not exist
 "w" - Write - Opens a file for writing, creates the file if it does not exist
+"x" - Create - Creates the specified file, returns an error if the file exists
+```
+
+### Types of Files
+
+#### Text File
+
+A text file is a type of computer file that is structured as a sequence of lines of electronic text. Text files are composed of characters organized into one or more lines, each of which may include any printable character, as well as control characters such as the newline character.
+
+```python
+syntax:
+    file = open("filename.txt", "mode")
+```
+
+```python
+example:
+    file = open("filename.txt", "w")
+    file.write("Hello World")
+    file.close()
+```
+
+#### Binary File
+
+A binary file is a computer file that is not a text file. Binary files are generally considered to be non-human-readable, although this is not always the case. Binary files are often used to store data that can be read by a computer program, but not by a human.
+
+```python
+syntax:
+    file = open("filename.bin", "mode")
+```
+
+```python
+example:
+    file = open("filename.bin", "wb")
+    file.write(bytes([0, 1, 2, 3, 4, 5]))
+    file.close()
+    # Or You can use pickle module
+    import pickle
+    file = open("filename.bin", "wb")
+    pickle.dump([0, 1, 2, 3, 4, 5], file)
+    file.close()
+```
+
+#### CSV File
+
+A CSV file is a plain text file that contains a list of data. Each line of the file is a data record. Each record consists of one or more fields, separated by commas. The use of the comma as a field separator is the source of the name for this file format.
+
+```python
+example:
+    import csv
+    with open('filename.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["SN", "Name", "Age"])
+        writer.writerow([1, "John", 23])
+        writer.writerow([2, "Smith", 24])
+        writer.writerow([3, "Alex", 25])
+
 ```
