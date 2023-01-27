@@ -1,4 +1,4 @@
-fjaldjfkajfje
-akfjlajefjae
-faklfewkjflajeklfa
-jef
+def hello():
+	print("Hello")
+
+hello()
