@@ -2556,3 +2556,19 @@ example:
         writer.writerow([3, "Alex", 25])
 
 ```
+
+#### JSON File
+
+JSON stands for JavaScript Object Notation. JSON is a lightweight data-interchange format. It is easy for humans to read and write. It is easy for machines to parse and generate. It is based on a subset of the JavaScript Programming Language Standard ECMA-262 3rd Edition - December 1999.
+
+```python
+example:
+    import json
+    data = {
+        "name": "John",
+        "age": 30,
+        "city": "New York"
+    }
+    with open('filename.json', 'w') as file:
+        json.dump(data, file)
+```
