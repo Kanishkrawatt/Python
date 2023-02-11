@@ -24,11 +24,7 @@
 |18|Numpy| [Link](#numpy-library) |
 |19|Matplotlib| [Link](#introduction-to-matplotlib) |
 |20|File Handling| [Link](#file-handling) |
-<style>
-    table {
-        width: 100%;
-    }
-</style>
+
 
 
 
