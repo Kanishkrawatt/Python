@@ -10,6 +10,50 @@ Python is a programming language that was created by Guido van Rossum in 1991. I
 
 Python is an interpreted language. This means that the code is not compiled into machine language before it is executed. Instead, the code is executed by an interpreter. The interpreter reads the code and executes it. Python is also an object-oriented programming language. This means that the code is organized into objects. These objects can contain data and code. Python is also a dynamically typed language. This means that the type of a variable is determined at runtime.
 
+Features of Python:
+Python provides many useful features which make it popular and valuable from the other programming languages. It supports object-oriented programming, procedural programming approaches and provides dynamic memory allocation.
+some of the features of Python are :
+
+1. Python is an interpreted language :
+   Python is an interpreted language. It means that the Python code is executed by the interpreter. The interpreter reads the code line by line and executes it. It is not necessary to compile the code before executing it . This makes the process of executing the code faster and easier.
+
+2. Python is a dynamically typed language :
+   Python is a dynamically typed language. It means that the type of the variable is determined at runtime. It is not necessary to specify the type of the variable while declaring it. This makes the process of declaring the variables easier and faster.
+
+3. Python is an object-oriented language :
+   Python is an object-oriented language. It means that the Python code is organized into objects . The Object is a collection of data and methods that act on the data. The data in the object is called attributes and the methods are called as methods . the objects are created using classes. The class is a blueprint for the object .
+
+4. Python is a general-purpose language :
+   Python is a general-purpose language . It means that the Python can be used for any purpose . It can be used for web development, desktop application, game development, etc.
+
+5. Python is a cross-platform language :
+   Python is a cross-platform language. It means that the Python can be used on any platform . It can be used on Windows, Mac, Linux, etc.
+
+6. Python is free and open-source :
+   Python is free and open-source. It means that the Python is free to use and distribute. It is also open-source which means that the source code of the Python is available to everyone. Anyone can modify the source code and distribute it.
+
+#### Applications of Python
+
+Python is used in many fields. Some of the application of Python are :
+
+1. Web Development :
+   Python is used for web development. It is used for developing web applications. It is used for developing web frameworks like Django, Flask, etc.
+
+2. Desktop Application :
+   Python is used for developing desktop applications. It is used for developing GUI applications with the help of python libraries like Tkinter , PyQt, etc.
+
+3. Game Development :
+   Python is used for developing games. It is used for developing 2D games with the help of python libraries like Pygame, etc
+
+4. Machine Learning :
+   Python is used for developing machine learning applications. It is used for developing machine learning models with the help of python libraries like Scikit-learn, Tensorflow, etc.
+
+5. Data Science :
+   Python is used for developing data science applications. It is used for developing data science applications with the help of python libraries like Numpy, Pandas, Matplotlib, etc.
+
+6. Image Processing :
+   Python is used for developing image processing applications. It is used for developing image processing applications with the help of python libraries like OpenCV, etc.
+
 ### Program Structure
 
 Python programs are organized into modules. A module is a file that contains Python code. Modules can be imported into other modules.
@@ -2482,8 +2526,6 @@ example:
 
 output:
 <img src="matplotlib/q3.png" width="400" height="auto">
-
-
 
 #### File Handling
 
