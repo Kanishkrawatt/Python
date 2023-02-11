@@ -25,104 +25,104 @@ Link
 </p></th>
   </tr>
   <tr>
-    <td>1</td>
-    <td>Introduction</td> 
-    <td><a href="#basic-introduction-to-python">Link</a></td>
+    <td align="center">1</td>
+    <td align="center">Introduction</td> 
+    <td align="center"><a href="#basic-introduction-to-python">Link</a></td>
   </tr>
   <tr>
-    <td>2</td>
-    <td>Program Structure</td> 
-    <td><a href="#program-structure">Link</a></td>
+    <td align="center">2</td>
+    <td align="center">Program Structure</td> 
+    <td align="center"><a href="#program-structure">Link</a></td>
   </tr>
   <tr>
-    <td>3</td>
-    <td>Identifiers</td> 
-    <td><a href="#identifiers">Link</a></td>
+    <td align="center">3</td>
+    <td align="center">Identifiers</td> 
+    <td align="center"><a href="#identifiers">Link</a></td>
   </tr>
   <tr>
-    <td>4</td>
-    <td>Reserved Words</td> 
-    <td><a href="#reserved-words">Link</a></td>
+    <td align="center">4</td>
+    <td align="center">Reserved Words</td> 
+    <td align="center"><a href="#reserved-words">Link</a></td>
   </tr>
   <tr>
-    <td>5</td>
-    <td>Escape Sequences</td> 
-    <td><a href="#escape-sequences">Link</a></td>
+    <td align="center">5</td>
+    <td align="center">Escape Sequences</td> 
+    <td align="center"><a href="#escape-sequences">Link</a></td>
   </tr>
   <tr>
-    <td>6</td>
-    <td>Comments</td> 
-    <td><a href="#comments">Link</a></td>
+    <td align="center">6</td>
+    <td align="center">Comments</td> 
+    <td align="center"><a href="#comments">Link</a></td>
   </tr>
   <tr>
-    <td>7</td>
-    <td>Variables</td> 
-    <td><a href="#variables">Link</a></td>
+    <td align="center">7</td>
+    <td align="center">Variables</td> 
+    <td align="center"><a href="#variables">Link</a></td>
   </tr>
   <tr>
-    <td>8</td>
-    <td>Data Types</td> 
-    <td><a href="#data-types">Link</a></td>
+    <td align="center">8</td>
+    <td align="center">Data Types</td> 
+    <td align="center"><a href="#data-types">Link</a></td>
   </tr>
   <tr>
-    <td>9</td>
-    <td>Operators</td> 
-    <td><a href="#operators">Link</a></td>
+    <td align="center">9</td>
+    <td align="center">Operators</td> 
+    <td align="center"><a href="#operators">Link</a></td>
   </tr>
   <tr>
-    <td>10</td>
-    <td>Control Structure</td> 
-    <td><a href="#control-structures">Link</a></td>
+    <td align="center">10</td>
+    <td align="center">Control Structure</td> 
+    <td align="center"><a href="#control-structures">Link</a></td>
   </tr>
   <tr>
-    <td>11</td>
-    <td>Strings</td> 
-    <td><a href="#strings">Link</a></td>
+    <td align="center">11</td>
+    <td align="center">Strings</td> 
+    <td align="center"><a href="#strings">Link</a></td>
   </tr>
   <tr>
-    <td>12</td>
-    <td>Lists</td> 
-    <td><a href="#lists">Link</a></td>
+    <td align="center">12</td>
+    <td align="center">Lists</td> 
+    <td align="center"><a href="#lists">Link</a></td>
   </tr>
   <tr>
-    <td>13</td>
-    <td>Tuples</td> 
-    <td><a href="#tuple">Link</a></td>
+    <td align="center">13</td>
+    <td align="center">Tuples</td> 
+    <td align="center"><a href="#tuple">Link</a></td>
   </tr>
   <tr>
-    <td>14</td>
-    <td>Dictionaries</td> 
-    <td><a href="#dictionary">Link</a></td>
+    <td align="center">14</td>
+    <td align="center">Dictionaries</td> 
+    <td align="center"><a href="#dictionary">Link</a></td>
   </tr>
   <tr>
-    <td>15</td>
-    <td>Functions</td> 
-    <td><a href="#functions">Link</a></td>
+    <td align="center">15</td>
+    <td align="center">Functions</td> 
+    <td align="center"><a href="#functions">Link</a></td>
   </tr>
   <tr>
-    <td>16</td>
-    <td>Modules</td> 
-    <td><a href="#modules">Link</a></td>
+    <td align="center">16</td>
+    <td align="center">Modules</td> 
+    <td align="center"><a href="#modules">Link</a></td>
   </tr>
   <tr>
-    <td>17</td>
-    <td>Packages</td> 
-    <td><a href="#packages">Link</a></td>
+    <td align="center">17</td>
+    <td align="center">Packages</td> 
+    <td align="center"><a href="#packages">Link</a></td>
   </tr>
   <tr>
-    <td>18</td>
-    <td>Numpy</td> 
-    <td><a href="#numpy-library">Link</a></td>
+    <td align="center">18</td>
+    <td align="center">Numpy</td> 
+    <td align="center"><a href="#numpy-library">Link</a></td>
   </tr>
   <tr>
-    <td>19</td>
-    <td>Matplotlib</td> 
-    <td><a href="#introduction-to-matplotlib">Link</a></td>
+    <td align="center">19</td>
+    <td align="center">Matplotlib</td> 
+    <td align="center"><a href="#introduction-to-matplotlib">Link</a></td>
   </tr>
   <tr>
-    <td>20</td>
-    <td>File Handling</td> 
-    <td><a href="#file-handling">Link</a></td>
+    <td align="center">20</td>
+    <td align="center">File Handling</td> 
+    <td align="center"><a href="#file-handling">Link</a></td>
   </tr>
 </table>
 
