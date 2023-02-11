@@ -1,30 +1,130 @@
 ## Python
 
 
-# Contents
-|S.No.|Topic| Link |
-|:---:|:---:|:---:|
-|1|Introduction| [Link](#basic-introduction-to-python) |
-|2|Program Structure| [Link](#program-structure) |
-|3|Identifiers| [Link](#identifiers) |
-|4|Reserved Words| [Link](#reserved-words) |
-|5|Escape Sequences| [Link](#escape-sequences) |
-|6|Comments| [Link](#comments) |
-|7|Variables| [Link](#variables) |
-|8|Data Types| [Link](#data-types) |
-|9|Operators| [Link](#operators) |
-|10|Control Structure | [Link](#control-structures) |
-|11|Strings| [Link](#strings) |
-|12|Lists| [Link](#lists) |
-|13|Tuples| [Link](#tuple) |
-|14|Dictionaries| [Link](#dictionary) |
-|15|Functions| [Link](#functions) |
-|16|Modules| [Link](#modules) |
-|17|Packages| [Link](#packages) |
-|18|Numpy| [Link](#numpy-library) |
-|19|Matplotlib| [Link](#introduction-to-matplotlib) |
-|20|File Handling| [Link](#file-handling) |
-
+### Contents
+<table>
+  <tr>
+    <th align="center"><img width=200px alt=""/>
+    <p> 
+<small>
+S.No.
+</small>
+</p></th>
+    <th align="center">
+    <img width=500px alt=""/>
+    <p> 
+<small>
+Topic
+</small>
+</p></th> 
+    <th align="center">
+    <img width=200px alt=""/><p> 
+<small>
+Link
+</small>
+</p></th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Introduction</td> 
+    <td><a href="#basic-introduction-to-python">Link</a></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Program Structure</td> 
+    <td><a href="#program-structure">Link</a></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Identifiers</td> 
+    <td><a href="#identifiers">Link</a></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Reserved Words</td> 
+    <td><a href="#reserved-words">Link</a></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Escape Sequences</td> 
+    <td><a href="#escape-sequences">Link</a></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Comments</td> 
+    <td><a href="#comments">Link</a></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Variables</td> 
+    <td><a href="#variables">Link</a></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Data Types</td> 
+    <td><a href="#data-types">Link</a></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Operators</td> 
+    <td><a href="#operators">Link</a></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Control Structure</td> 
+    <td><a href="#control-structures">Link</a></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Strings</td> 
+    <td><a href="#strings">Link</a></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Lists</td> 
+    <td><a href="#lists">Link</a></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Tuples</td> 
+    <td><a href="#tuple">Link</a></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Dictionaries</td> 
+    <td><a href="#dictionary">Link</a></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Functions</td> 
+    <td><a href="#functions">Link</a></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Modules</td> 
+    <td><a href="#modules">Link</a></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Packages</td> 
+    <td><a href="#packages">Link</a></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Numpy</td> 
+    <td><a href="#numpy-library">Link</a></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Matplotlib</td> 
+    <td><a href="#introduction-to-matplotlib">Link</a></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>File Handling</td> 
+    <td><a href="#file-handling">Link</a></td>
+  </tr>
+</table>
 
 
 
