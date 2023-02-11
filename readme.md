@@ -1,5 +1,42 @@
 ## Python
 
+# Contents
+|S.No.|Topic| Link |
+|:---:|:---:|:---:|
+|1|Introduction| [Link](#basic-introduction-to-python) |
+|2|Program Structure| [Link](#program-structure) |
+|3|Identifiers| [Link](#identifiers) |
+|4|Reserved Words| [Link](#reserved-words) |
+|5|Escape Sequences| [Link](#escape-sequences) |
+|6|Comments| [Link](#comments) |
+|7|Variables| [Link](#variables) |
+|8|Data Types| [Link](#data-types) |
+|9|Operators| [Link](#operators) |
+|10|Control Structure | [Link](#control-structures) |
+|11|Strings| [Link](#strings) |
+|12|Lists| [Link](#lists) |
+|13|Tuples| [Link](#tuple) |
+|14|Dictionaries| [Link](#dictionary) |
+|15|Functions| [Link](#functions) |
+|16|Modules| [Link](#modules) |
+|17|Packages| [Link](#packages) |
+|18|Numpy| [Link](#numpy-library) |
+|19|Matplotlib| [Link](#introduction-to-matplotlib) |
+|20|File Handling| [Link](#file-handling) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Basic Introduction to Python
 
 #### Origin
