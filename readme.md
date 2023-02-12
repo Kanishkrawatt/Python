@@ -1,7 +1,7 @@
 ## Python
 
-
 ### Contents
+
 <table>
   <tr>
     <th align="center"><img width=200px alt=""/>
@@ -124,19 +124,17 @@ Link
     <td>File Handling</td> 
     <td><a href="#file-handling">Link</a></td>
   </tr>
+   <tr>
+    <td>21</td>
+    <td>List Vs Dictionary</td> 
+    <td><a href="#list-vs-dictionary">Link</a></td>
+  </tr>
+   <tr>
+    <td>22</td>
+    <td>List vs Array</td> 
+    <td><a href="#list-vs-array">Link</a></td>
+  </tr>
 </table>
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### Basic Introduction to Python
 
@@ -2752,3 +2750,30 @@ example:
     with open('filename.json', 'w') as file:
         json.dump(data, file)
 ```
+
+### List vs Dictionary
+
+List and Dictionary are two of the most commonly used data structures in Python. Both of them are used to store a collection of data. However, there are some differences between them.
+
+| List                                        | Dictionary                                                |
+| ------------------------------------------- | --------------------------------------------------------- |
+| List is an ordered collection of items.     | Dictionary is an unordered collection of key-value pairs. |
+| List is mutable.                            | Dictionary is mutable.                                    |
+| List is indexed.                            | Dictionary is not indexed.                                |
+| List allows duplicate members.              | Dictionary does not allow duplicate members.              |
+| List is represented by square brackets.([]) | Dictionary is represented by curly brackets.({})          |
+| List is a collection of items.              | Dictionary is a collection of key-value pairs.            |
+
+### List vs Array
+
+List and Array are two of the most commonly used data structures in Python. Both of them are used to store a collection of data. However, there are some differences between them.
+
+| List                                         | Array                                 |
+| -------------------------------------------- | ------------------------------------- |
+| List does not support arithmetic operations. | Array supports arithmetic operations. |
+| List is heterogeneous.                       | Array is homogeneous.                 |
+| List is dynamic.                             | Array is static.                      |
+| List has no size limit.                      | Array has a fixed size.               |
+| List is slow.                                | Array is fast.                        |
+| List has many built-in methods.              | Array has few built-in methods.       |
+| No need to import array module.              | Need to import array module.          |
