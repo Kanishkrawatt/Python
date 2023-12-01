@@ -29,19 +29,6 @@ def findEncodings(images):
     return encodeList
 
 
-def markAttendance(name, number):
-    with open('Attendence.csv', 'r+') as f:
-        myDataList = f.readlines()
-        nameList = []
-        for line in myDataList:
-            entry = line.split(',')
-            nameList.append(entry[0])
-        if name not in nameList:
-            now = datetime.now()
-            dtString = now.strftime('%H:%M:%S')
-            f.writelines(f'{name},{dtString}\n')
-            pywhatkit.sendwhatmsg("+91"+number, "Attendance of "+name+" marked at " +
-                                  dtString, datetime.now().hour, datetime.now().minute + 1)
 def main():
     encodeListKnown = findEncodings(images)
     print('Encoding Complete')
@@ -74,8 +61,6 @@ def main():
                               (0, 255, 0), cv2.FILLED)
                 cv2.putText(img, name, (x1+6, y2-6),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
-                # Marking the attendance
-                markAttendance(name, number)
         # Displaying the video
         cv2.imshow('Face Detection', img)
         if cv2.waitKey(1) == ord('q'):
